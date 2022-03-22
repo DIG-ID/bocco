@@ -11282,5 +11282,33 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.section-banner {
+  background-color: #080f26;
+  color: #fff;
+}
+
+.section-highlights {
+  background-color: #0140e5;
+  color: #fff;
+}
+
+.section-services {
+  background-color: #edf1fd;
+}
+
+.section-cta {
+  background-color: #0140e5;
+  color: #fff;
+}
+
+.section-testimonials {
+  background-color: #edf1fd;
+}
+
+#main-footer {
+  background-color: #080f26;
+  color: #fff;
+  padding-top: 100px;
+}
 
 /*# sourceMappingURL=main.css.map*/
