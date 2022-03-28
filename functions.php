@@ -62,6 +62,7 @@ function boccog_theme_enqueue_styles() {
 		wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/dist/main.css', array(), $theme_version );
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, false );
+		wp_register_style( 'googleFonts', 'fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap', array(), null );
 	endif;
 
 }
@@ -97,3 +98,6 @@ require get_template_directory() . '/inc/theme-template-tags.php';
 
 // Theme customizer options.
 require get_template_directory() . '/inc/theme-customizer.php';
+
+// Custom navigation walker.
+require get_template_directory() . '/inc/custom-nav-walker.php';

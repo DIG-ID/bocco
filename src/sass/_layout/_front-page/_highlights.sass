@@ -1,3 +1,33 @@
 .section-highlights
-  background-color: $primary-color
-  color: #fff
+  position: absolute
+  width: 100%
+  left: 0px
+  bottom: -250px
+  //transform: translateY(-50%)
+  .row
+    box-shadow: 0px 2px 14px #1536DF88
+    border-radius: 15px
+    position: relative
+    top: -15px
+    background-color: $primary-color
+    color: #fff
+    padding-top: 60px
+    padding-bottom: 60px
+.highlights-card
+  display: flex
+  padding: 20px 100px
+  border-right: 2px solid $accent
+  &:last-child
+    border: none
+  &__content
+    padding: 0px 20px
+  &__title
+    font-size: 24px
+    font-weight: 500
+    line-height: 30px
+    letter-spacing: -0.72px
+  &__description
+    font-size: 17px
+    font-weight: 400
+    line-height: 30px
+    letter-spacing: 0px

@@ -1,3 +1,15 @@
+body
+  font-family: $roboto
+
+.custom-container-full
+  @include make-container()
+  width: 1280px
+
+.custom-container-inner
+  @include make-container()
+  width: 1000px
+
+@import 'main-header'
 @import 'main-nav'
 @import '_front-page/banner'
 @import '_front-page/highlights'
