@@ -1,8 +1,19 @@
 body
   font-family: $roboto
 
+body.is-open
+  overflow: hidden
+
 .main-content
-  padding-top: 100px
+  padding-top: 108px
+
+@include media-breakpoint-down(xl)
+  .main-content
+    padding-top: 92px
+
+@include media-breakpoint-down(sm)
+  .main-content
+    padding-top: 72px
 
 .screen-reader-text
   border: 0

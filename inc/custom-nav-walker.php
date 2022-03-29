@@ -73,7 +73,7 @@ if ( ! class_exists( 'Custom_Walker_Nav_Menu' ) ) :
 			$indent = ( $depth ) ? str_repeat( $t, $depth ) : '';
 
 			$classes   = empty( $menu_item->classes ) ? array() : (array) $menu_item->classes;
-			$classes[] = ( $args->walker->has_children ) ? 'dropdown' : '';
+			$classes[] = ( $args->walker->has_children ) ? 'nav-item dropdown' : '';
 			$classes[] = 'menu-item-' . $menu_item->ID;
 
 			/**

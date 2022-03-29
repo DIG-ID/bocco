@@ -1,7 +1,6 @@
 .main-header
   background-color: $background-dark
   transition: all 400ms ease-in-out
-  padding: 20px 0px
   .custom-logo-link
     svg
       width: 100%
@@ -15,9 +14,17 @@
         transition: all 400ms ease-in-out
         fill: black
 
+.admin-bar
+  .main-header.fixed-top
+    top: 32px
+
+@include media-breakpoint-down(md)
+  .admin-bar
+    .main-header.fixed-top
+      top: 46px
+
 @include media-breakpoint-down(sm)
   .main-header
-    padding: 20px
     .custom-logo-link
       svg
         width: 100%
