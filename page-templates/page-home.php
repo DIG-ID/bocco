@@ -1,3 +1,8 @@
+<?php
+/**
+ * Template Name: Home Page Template
+ */
+?>
 <?php get_header(); ?>
 <main id="main-content" class="main-content">
 	<?php get_template_part( 'template-parts/front-page/banner' ); ?>

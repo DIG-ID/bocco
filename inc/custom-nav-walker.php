@@ -36,24 +36,11 @@ if ( ! class_exists( 'Custom_Walker_Nav_Menu' ) ) :
 			$class_names = implode( ' ', apply_filters( 'nav_menu_submenu_css_class', $classes, $args, $depth ) );
 			$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
 
-			$output .= '<div class="dropdown-menu">';
-			$output .= "{$n}{$indent}<ul$class_names>{$n}";
-			$output .= "{$n}{$indent}<li><p class=\"sub-menu__title\">Demo Request Title</p><p class=\"sub-menu__description\">Mit unseren Systemen bieten wir Ihrem Hotel die Möglichkeit eine auf Sie zugeschnittene Distributionsinfrastruktur zu kreieren, welche nicht nur die Onlineumsätze steigern wird, sondern Ihnen dank einfacher Handhabung auch mehr Flexibilität und Kontrolle bietet.</p><a href=\"\" class=\"demo-btn\">Demo Anfragem</a></li>";
-		}
+			$mega_menu_title = get_theme_mod( 'mega_menu_title' );
 
-		/**
-		 * Ends the list of after the elements are added.
-		 */
-		public function end_lvl( &$output, $depth = 0, $args = null ) {
-			if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
-				$t = '';
-				$n = '';
-			} else {
-				$t = "\t";
-				$n = "\n";
-			}
-			$indent  = str_repeat( $t, $depth );
-			$output .= "$indent</ul>{$n}</div>";
+			$output .= '<div class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">';
+			$output .= "{$n}{$indent}<ul$class_names>{$n}";
+			$output .= "{$n}{$indent}<li><p class=\"sub-menu__title\">" . get_theme_mod( 'mega_menu_title' ) . "</p><p class=\"sub-menu__description\">" . get_theme_mod( 'mega_menu_description' ) . "</p><a href=\" " . get_theme_mod( 'mega_menu_btn_link' ) . " \" class=\"demo-btn\">" . get_theme_mod( 'mega_menu_btn_title' ) . "</a></li>";
 		}
 
 		/**
@@ -86,6 +73,7 @@ if ( ! class_exists( 'Custom_Walker_Nav_Menu' ) ) :
 			$indent = ( $depth ) ? str_repeat( $t, $depth ) : '';
 
 			$classes   = empty( $menu_item->classes ) ? array() : (array) $menu_item->classes;
+			$classes[] = ( $args->walker->has_children ) ? 'dropdown' : '';
 			$classes[] = 'menu-item-' . $menu_item->ID;
 
 			/**
@@ -140,6 +128,16 @@ if ( ! class_exists( 'Custom_Walker_Nav_Menu' ) ) :
 			$atts['href']         = ! empty( $menu_item->url ) ? $menu_item->url : '';
 			$atts['aria-current'] = $menu_item->current ? 'page' : '';
 
+			$atts['class']               = $args->walker->has_children ? 'dropdown-toggle' : '';
+			$atts['id']                  = $args->walker->has_children ? 'dropdownMenuClickableInside' : '';
+			$atts['role']                = $args->walker->has_children ? 'button' : '';
+			$atts['data-bs-toggle']      = $args->walker->has_children ? 'dropdown' : '';
+			$atts['data-bs-auto-closed'] = $args->walker->has_children ? 'inside' : '';
+			$atts['aria-expanded']       = $args->walker->has_children ? 'false' : '';
+
+
+			//console_log($menu_item);
+			//console_log($args);
 			/**
 			 * Filters the HTML attributes applied to a menu item's anchor element.
 			 *
@@ -184,11 +182,22 @@ if ( ! class_exists( 'Custom_Walker_Nav_Menu' ) ) :
 			 */
 			$title = apply_filters( 'nav_menu_item_title', $title, $menu_item, $args, $depth );
 
-			$item_output  = $args->before;
-			$item_output .= '<a' . $attributes . '>';
-			$item_output .= $args->link_before . $title . $args->link_after;
-			$item_output .= '</a>';
-			$item_output .= $args->after;
+
+			if ( $menu_item->menu_item_parent > 0 ) :
+				$item_output  = $args->before;
+				$item_output .= '<a class="sub-menu__title" ' . $attributes . '>' . $title . '</a>';
+				$item_output .= '<p class="sub-menu__description">' . $menu_item->description . '</p>';
+				$item_output .= '<a' . $attributes . '>';
+				$item_output .= $args->link_before . __( 'Mehr Erfahren ➔', 'bocco-group' ) . $args->link_after;
+				$item_output .= '</a>';
+				$item_output .= $args->after;
+			else:
+				$item_output  = $args->before;
+				$item_output .= '<a' . $attributes . '>';
+				$item_output .= $args->link_before . $title . $args->link_after;
+				$item_output .= '</a>';
+				$item_output .= $args->after;
+			endif;
 
 			/**
 			 * Filters a menu item's starting output.
@@ -205,30 +214,6 @@ if ( ! class_exists( 'Custom_Walker_Nav_Menu' ) ) :
 			 * @param stdClass $args        An object of wp_nav_menu() arguments.
 			 */
 			$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $menu_item, $depth, $args );
-		}
-
-		/**
-		 * Ends the element output, if needed.
-		 *
-		 * @since 3.0.0
-		 * @since 5.9.0 Renamed `$item` to `$data_object` to match parent class for PHP 8 named parameter support.
-		 *
-		 * @see Walker::end_el()
-		 *
-		 * @param string   $output      Used to append additional content (passed by reference).
-		 * @param WP_Post  $data_object Menu item data object. Not used.
-		 * @param int      $depth       Depth of page. Not Used.
-		 * @param stdClass $args        An object of wp_nav_menu() arguments.
-		 */
-		public function end_el( &$output, $data_object, $depth = 0, $args = null ) {
-			if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
-				$t = '';
-				$n = '';
-			} else {
-				$t = "\t";
-				$n = "\n";
-			}
-			$output .= "</li>{$n}";
 		}
 
 	}
