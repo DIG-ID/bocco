@@ -1,9 +1,12 @@
 .section-banner
   position: relative
-  padding: 180px 0px 330px 0px
+  padding: 100px 0px 330px 0px
   background-color: $background-dark
   color: #fff
-  margin-bottom: 250px
+  background-image: url('../../../images/header_Line.svg')
+  background-repeat: no-repeat
+  background-position: top -200px left -100px
+  transition: all 400ms ease-in-out
   &__title
     font-size: 75px
     line-height: 75px
@@ -11,7 +14,9 @@
     color: #fff
     margin-bottom: 40px
   &__subtitle
-    font: normal normal 500 20px/13px $roboto
+    font-weight: 500
+    font-size: 20px
+    line-height: 13px
     letter-spacing: 0px
     text-transform: uppercase
     color: $accent
@@ -21,3 +26,22 @@
     border-color: transparentize(#fff, 0.8)
     box-shadow: none
     margin: 0px
+    white-space: nowrap
+
+@include media-breakpoint-down(lg)
+  .section-banner
+    background-position: center right -250px
+
+@include media-breakpoint-down(md)
+  .section-banner
+    background-position: center right -450px
+    padding-top: 30px
+    padding-bottom: 400px
+    &__title
+      font-size: 32px
+      line-height: 32px
+      margin-bottom: 20px
+    &__subtitle
+      font-size: 13px
+
+    &__btn

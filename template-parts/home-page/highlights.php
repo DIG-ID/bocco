@@ -1,20 +1,22 @@
-<section id="section-highlights" class="section section-highlights">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-sm-12 col-md-6 highlights-card">
-				<img src="" alt="icon here">
-				<div class="highlights-card__content">
-					<p class="highlights-card__title">Deserve Your Success</p>
-					<p class="highlights-card__description">Seit 2005 beraten wir Schweizer Hoteliers individuell und persönlich im Bereich Online-Vertrieb & Online-Marketing und liefern dazu die notwendige Software und Strategie. Mit unserer langjährigen Erfahrung unterstützen wir den Hotelier dabei, eine neue Strategie auszuarbeiten und individuell umzusetzen.</p>
-				</div>
-			</div>
-			<div class="col-12 col-sm-12 col-md-6 highlights-card">
-				<img src="" alt="icon here">
-				<div class="highlights-card__content">
-					<p class="highlights-card__title">Optimize Your Presence</p>
-					<p class="highlights-card__description">Wir empfehlen nicht nur eine Software, sondern übernehmen auch die komplette Einrichtung, Schulung vor Ort, Begleitung bei der Umsetzung und optimieren dabei Ihren Online-Umsatz. Alles aus einer Hand und darüber hinaus individueller und zuverlässiger, persönlicher Support und Begleitung in und aus der Schweiz.</p>
-				</div>
+<?php if ( have_rows( 'highlights_block' ) ) : ?>
+	<section id="section-highlights" class="section section-highlights">
+		<div class="container">
+			<div class="row">
+				<?php while ( have_rows( 'highlights_block' ) ) : the_row(); ?>
+					<?php
+					$block_icon        = get_sub_field( 'icon' );
+					$block_title       = get_sub_field( 'title' );
+					$block_description = get_sub_field( 'description' );
+					?>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 highlights-card">
+						<i class="<?php echo $block_icon; ?>"></i>
+						<div class="highlights-card__content">
+							<p class="highlights-card__title"><?php echo $block_title; ?></p>
+							<p class="highlights-card__description"><?php echo $block_description; ?></p>
+						</div>
+					</div>
+				<?php endwhile; ?>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+<?php endif;
