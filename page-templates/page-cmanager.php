@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: Channel Manager Page Template
+ * Template Post Type: post, page, products
  */
 
 get_header();

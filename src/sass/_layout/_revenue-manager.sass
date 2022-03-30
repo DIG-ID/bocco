@@ -1,11 +1,10 @@
-.bg-green
-    
-
-.section-cmintro
+.section-rmintro
+    overflow: hidden
     margin-top: 95px
     &__leftcol
-        padding: 130px 0
+        padding: 100px 0 130px 0
     &__rightcol
+        padding: 100px 0 130px 0
         background-color: $background-green
     &__subtitle
         font-family: $roboto
@@ -20,112 +19,40 @@
         letter-spacing: -0.1px
         color: $blue
         margin-bottom: 25px
+    &__title-text
+        font-family: $roboto
+        font-size: 42px
+        line-height: 55px
+        color: $blue
+        max-width: 400px
     &__text
         font-family: $roboto
         font-size: 17px
         line-height: 30px
         color: $body-text
+        max-width: 425px
+        margin-bottom: 50px
     &__content-wrapper
-        max-width: 400px
+        max-width: 450px
         float: right
-        margin-right: 150px
-
-.section-cmcontent-1
-    padding: 130px 0
-    background-color: $blue
-    &__subtitle
-        font-family: $roboto
-        font-size: 18px
-        text-transform: uppercase
-        color: $background-green
-    &__title
-        font-family: $roboto
-        font-size: 42px
-        font-weight: 400
-        color: #fff
-        margin-bottom: 30px
-        max-width: 400px
-    &__list
-        list-style: none
-        li
-            font-family: $roboto
-            font-size: 22px
-            color: #fff
-            position: relative
-            &::before
-                content: "●"
-                color: $background-green
-                display: inline-block
-                width: 1em
-                margin-left: -1em
-        p
-            font-family: $roboto
-            font-size: 17px
-            color: $body-text
-            max-width: 500px
-            margin-bottom: 30px
-    &__content-wrapper
-        max-width: 570px
-        margin-top: 50px
+        margin-right: 180px
+        margin-top: 80px
     &__img-pack
         position: relative
         display: block
-        margin: 0 0 0 auto
-        max-width: 620px
+        margin-left: -120px
     &__img-abtop
         position: absolute
-        left: 190px
-        top: 80px
+        left: 0px
+        top: 30px
     &__img-abbot
         position: absolute
-        left: 190px
-        top: 480px
-    &__rightcol
-        padding: 0 0 0 60px
+        left: 0px
+        top: 590px
+        min-width: 778px
 
-.section-cmcontent-2
-    overflow: hidden
-    padding: 130px 0 0 0
-    background-color: #fff
-    &__subtitle
-        font-family: $roboto
-        font-size: 18px
-        text-transform: uppercase
-        color: $electric-blue
-    &__title
-        font-family: $roboto
-        font-size: 42px
-        font-weight: 400
-        color: $blue
-        margin-bottom: 30px
-        max-width: 400px
-    &__list
-        list-style: none
-        li
-            font-family: $roboto
-            font-size: 22px
-            color: $blue
-            position: relative
-            &::before
-                content: "●"
-                color: $electric-blue
-                display: inline-block
-                width: 1em
-                margin-left: -1em
-        p
-            font-family: $roboto
-            font-size: 17px
-            color: $body-text
-            max-width: 500px
-            margin-bottom: 30px
-    &__content-wrapper
-        max-width: 570px
-        float: right
-    &__img-overflow
-        min-width: 964px
-
-.section-cmcontent-3
-    padding: 130px 0
+.section-rmcontent-1
+    padding: 130px 0 200px 0
     background-color: $background-grey
     &__subtitle
         font-family: $roboto
@@ -138,7 +65,6 @@
         font-weight: 400
         color: $blue
         margin-bottom: 30px
-        max-width: 400px
     &__list
         list-style: none
         li
@@ -156,14 +82,76 @@
             font-family: $roboto
             font-size: 17px
             color: $body-text
-            max-width: 500px
+            max-width: 460px
             margin-bottom: 30px
     &__content-wrapper
-        max-width: 400px
-        margin-top: 70px
-    &__img-svg
-        float: right
+        max-width: 530px
+    &__img-pack
+        position: relative
+        display: block
+        margin: 0 0 0 auto
+    &__img-abbot
+        position: absolute
+        right: -10px
+        top: -60px
+    &__img-abtop
+        position: absolute
+        right: -180px
+        top: 190px
     &__leftcol
-        padding: 0 60px 0 0
+        z-index: 4
     &__rightcol
+        z-index: 5
         padding: 0 0 0 60px
+
+.section-rmcontent-2
+    overflow: hidden
+    padding: 130px 0 300px 0
+    background-color: #fff
+    &__subtitle
+        font-family: $roboto
+        font-size: 18px
+        text-transform: uppercase
+        color: $electric-blue
+    &__title
+        font-family: $roboto
+        font-size: 42px
+        font-weight: 400
+        color: $blue
+        margin-bottom: 30px
+    &__list
+        list-style: none
+        li
+            font-family: $roboto
+            font-size: 22px
+            color: $blue
+            position: relative
+            &::before
+                content: "●"
+                color: $electric-blue
+                display: inline-block
+                width: 1em
+                margin-left: -1em
+        p
+            font-family: $roboto
+            font-size: 17px
+            color: $body-text
+            max-width: 460px
+            margin-bottom: 30px
+    &__content-wrapper
+        max-width: 490px
+        float: right
+    &__img-pack
+        position: relative
+    &__img-abbot
+        position: absolute
+        left: -20px
+        top: 145px
+    &__img-abtop
+        position: absolute
+        left: 50px
+        top: -30px
+        min-width: 1080px
+    &__leftcol
+        padding: 0 0 0 60px
+        
