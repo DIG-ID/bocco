@@ -3,9 +3,9 @@
 		<div class="row">
 			<div class="col-6 col-md-12 col-lg-6 col-xl-6 section-cmcontent-1__leftcol">
                 <div class="section-cmcontent-1__img-pack">
-                    <img src="http://localhost/bocco/wp-content/uploads/CM_A_1.png">
-                    <img class="section-cmcontent-1__img-abtop" src="http://localhost/bocco/wp-content/uploads/CM_A_2.png">
-                    <img class="section-cmcontent-1__img-abbot" src="http://localhost/bocco/wp-content/uploads/CM_A_3.png">
+                    <img src="<?php echo wp_upload_dir()['url'] . '/CM_A_1.png' ?>">
+                    <img class="section-cmcontent-1__img-abtop" src="<?php echo wp_upload_dir()['url'] . '/CM_A_2.png' ?>">
+                    <img class="section-cmcontent-1__img-abbot" src="<?php echo wp_upload_dir()['url'] . '/CM_A_3.png' ?>">
                 </div>
 			</div>
 			<div class="col-6 col-md-12 col-lg-6 col-xl-6 section-cmcontent-1__rightcol">

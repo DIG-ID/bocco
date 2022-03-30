@@ -1,9 +1,10 @@
 .section-wbeintro
     margin-top: 95px
     &__leftcol
-        padding: 130px 0
+        padding: 130px 0 30px 0
     &__rightcol
-        background-color: $background-green
+        padding: 130px 0 30px 0
+        background-color: $electric-blue
     &__subtitle
         font-family: $roboto
         font-size: 18px
@@ -22,7 +23,45 @@
         font-size: 17px
         line-height: 30px
         color: $body-text
+        max-width: 395px
     &__content-wrapper
         max-width: 400px
         float: right
-        margin-right: 150px
+        margin-right: 180px
+        margin-top: 80px
+    &__img-pack
+        position: relative
+        display: block
+        margin-left: -160px
+    &__img-abtop
+        position: absolute
+        left: 125px
+        top: -40px
+    &__img-abbot
+        position: absolute
+        left: 300px
+        top: 160px
+
+.section-wbecontent-1
+    padding: 130px 0
+    background-color: $blue
+    &__content-wrapper
+        max-width: 570px
+        margin-top: 50px
+    &__img-pack
+        position: relative
+        display: block
+        margin: 0 0 0 auto
+    &__img-abbot
+        position: absolute
+        right: 120px
+        top: 0px
+    &__img-abtop
+        position: absolute
+        right: -180px
+        top: 130px
+    &__leftcol
+        z-index: 4
+    &__rightcol
+        z-index: 5
+        padding: 0 0 0 60px
