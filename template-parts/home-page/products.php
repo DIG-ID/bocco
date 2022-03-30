@@ -1,36 +1,44 @@
 <section id="section-products" class="section section-products">
 	<div class="container">
-		<div class="row">
-			<div class="col-12 col-md-5">
-				<p class="section-products__subtitle">Produkte</p>
-				<h2 class="section-products__title">Unsere Lösungen für Ihr Hotel</h2>
-				<p class="section-products__description"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas perspiciatis alias sed aliquam, quis omnis ullam? Officia modi magni porro similique amet, assumenda reiciendis recusandae dolorem eaque ipsa ab.</p>
+		<div class="row justify-content-between">
+			<div class="col-12 col-lg-5">
+				<p class="section-products__subtitle"><?php the_field( 'products_subtitle' ); ?></p>
+				<h2 class="section-products__title"><?php the_field( 'products_title' ); ?></h2>
+				<p class="section-products__description"><?php the_field( 'products_description' ); ?></p>
 			</div>
-			<div class="col-12 col-md-5">
-				<div class="row">
-					<article class="col-12 col-md-6 product-card">
-						<img src="" alt="icon here">
-						<h3>Channel Manager</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita quibusdam at exercitationem optio saepe ipsam, sed accusamus libero facilis fugiat beatae quia fuga? Odit, dolorem? Harum minima in rerum.</p>
-						<a href="" class="btn">Mehr Erfahren</a>
-					</article>
-					<div class="col-12 col-md-6 product-card">
-						<img src="" alt="icon here">
-						<h3>Buchungsmaschine</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita quibusdam at exercitationem optio saepe ipsam, sed accusamus libero facilis fugiat beatae quia fuga? Odit, dolorem? Harum minima in rerum.</p>
-						<a href="" class="btn">Mehr Erfahren</a>
+			<div class="col-12 col-lg-7">
+				<div class="row product-cards-wrapper">
+					<div class="col-12 col-lg-6">
+						<article class="product-card">
+							<i class="bg-icons-ChannelM"></i>
+							<h3 class="product-card__title">Channel Manager</h3>
+							<p class="product-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita quibusdam at exercitationem optio saepe ipsam, sed accusamus libero facilis fugiat beatae quia fuga? Odit, dolorem? Harum minima in rerum.</p>
+							<a href="" class="product-card__btn">Mehr Erfahren ➔</a>
+						</article>
+					</div	>
+					<div class="col-12 col-lg-6">
+						<article class="product-card">
+							<i class="bg-icons-WebBookingE"></i>
+							<h3 class="product-card__title">Buchungsmaschine</h3>
+							<p class="product-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita quibusdam at exercitationem optio saepe ipsam, sed accusamus libero facilis fugiat beatae quia fuga? Odit, dolorem? Harum minima in rerum.</p>
+							<a href="" class="product-card__btn">Mehr Erfahren ➔</a>
+						</article>
 					</div>
-					<div class="col-12 col-md-6 product-card">
-						<img src="" alt="icon here">
-						<h3>Revenue Management</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita quibusdam at exercitationem optio saepe ipsam, sed accusamus libero facilis fugiat beatae quia fuga? Odit, dolorem? Harum minima in rerum.</p>
-						<a href="" class="btn">Mehr Erfahren</a>
+					<div class="col-12 col-lg-6">
+						<article class="product-card">
+							<i class="bg-icons-RevenueM"></i>
+							<h3 class="product-card__title">Revenue Management</h3>
+							<p class="product-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita quibusdam at exercitationem optio saepe ipsam, sed accusamus libero facilis fugiat beatae quia fuga? Odit, dolorem? Harum minima in rerum.</p>
+							<a href="" class="product-card__btn">Mehr Erfahren ➔</a>
+						</article>
 					</div>
-					<div class="col-12 col-md-6 product-card">
-						<img src="" alt="icon here">
-						<h3>GDS</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita quibusdam at exercitationem optio saepe ipsam, sed accusamus libero facilis fugiat beatae quia fuga? Odit, dolorem? Harum minima in rerum.</p>
-						<a href="" class="btn">Mehr Erfahren</a>
+					<div class="col-12 col-lg-6">
+						<article class="product-card">
+							<i class="bg-icons-GDS"></i>
+							<h3 class="product-card__title">GDS</h3>
+							<p class="product-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita quibusdam at exercitationem optio saepe ipsam, sed accusamus libero facilis fugiat beatae quia fuga? Odit, dolorem? Harum minima in rerum.</p>
+							<a href="" class="product-card__btn">Mehr Erfahren ➔</a>
+						</article>
 					</div>
 				</div>
 			</div>
