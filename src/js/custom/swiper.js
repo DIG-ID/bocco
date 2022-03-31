@@ -5,9 +5,9 @@ $(function() {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
-    speed: 400,
+    speed: 6000,
     autoplay: {
-      delay: 2000,
+      delay: 1,
       disableOnInteraction: false,
     },
   });
@@ -35,6 +35,7 @@ $(function() {
     spaceBetween: 30,
     loop: true,
     speed: 400,
+    effect: 'fade',
     allowTouchMove: false,
     pagination: {
       el: '.testimonials-pagination',
