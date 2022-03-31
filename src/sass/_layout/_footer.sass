@@ -19,24 +19,22 @@
             color: #fff
             font-size: 17px
             line-height: 42px
-            transition: all 200ms ease-in-out
             position: relative
             &:hover
               &:before
                 visibility: visible
-                transform: scaleX(1)
+                width: 100%
             &:before
               content: ''
               position: absolute
-              width: 100%
+              width: 0
               height: 2px
               bottom: -5px
               left: 0
-              background: rgb(77,235,179)
+              background: $accent
               background: linear-gradient(90deg, $accent 0%, $primary-color 100%)
               visibility: hidden
-              transform: scaleX(0)
-              transition: all 0.3s ease-in-out
+              transition: all 0.2s ease-in-out
     .widget-title
       font-size: 22px
       line-height: 32px
@@ -46,7 +44,7 @@
     .footer-contact-details
       margin-bottom: 80px
       p
-        font-size: 18px
+        font-size: 17px
         line-height: 30px
         letter-spacing: 0px
         margin: 0
@@ -61,24 +59,22 @@
           a
             text-decoration: none
             color: #fff
-            transition: all 200ms ease-in-out
             position: relative
             &:hover
               &:before
                 visibility: visible
-                transform: scaleX(1)
+                width: 100%
             &:before
               content: ''
               position: absolute
-              width: 100%
+              width: 0
               height: 2px
-              bottom: -4px
+              bottom: -5px
               left: 0
-              background: rgb(77,235,179)
+              background: $accent
               background: linear-gradient(90deg, $accent 0%, $primary-color 100%)
               visibility: hidden
-              transform: scaleX(0)
-              transition: all 0.3s ease-in-out
+              transition: all 0.2s ease-in-out
 
   .footer-nav-container
     border-top: 1px solid rgb(255 255 255 / 20%)
@@ -106,16 +102,15 @@
             &:hover
               &:before
                 visibility: visible
-                transform: scaleX(1)
+                width: 100%
             &:before
               content: ''
               position: absolute
-              width: 100%
+              width: 0
               height: 2px
               bottom: -5px
               left: 0
-              background: rgb(77,235,179)
+              background: $accent
               background: linear-gradient(90deg, $accent 0%, $primary-color 100%)
               visibility: hidden
-              transform: scaleX(0)
-              transition: all 0.3s ease-in-out
+              transition: all 0.2s ease-in-out
