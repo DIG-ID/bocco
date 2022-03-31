@@ -5,44 +5,48 @@ $(function() {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
-    speed: 600,
+    speed: 400,
     autoplay: {
-      delay: 3000,
+      delay: 2000,
       disableOnInteraction: false,
     },
   });
-  const testimonialsSwiper = new Swiper('.testimonials-swiper', {
-    slidesPerView: 2,
-    spaceBetween: 30,
+
+  const testimonialsThumbs = new Swiper('.testimonials-swiper-thumbnails', {
     loop: true,
-    //effect: 'fade',
-    speed: 600,
+    spaceBetween: 30,
+    speed: 400,
+    slidesPerView: 1,
+    effect: 'fade',
+    allowTouchMove: false,
+    pagination: {
+      el: '.testimonials-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
     },
-    navigation: {
-      nextEl: '.testimonials-button-next',
-      prevEl: '.testimonials-button-prev',
-    },
   });
 
-  const eventGalleryThumbs = new Swiper(".gallerySwiperThumbs", {
-    loop: true,
+  const testimonialsSwiper = new Swiper('.testimonials-swiper', {
+    slidesPerView: 1,
     spaceBetween: 30,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesProgress: true,
-  });
-  const eventGallery = new Swiper(".gallerySwiper", {
     loop: true,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".gallery-swiper-button-next",
-      prevEl: ".gallery-swiper-button-prev",
+    speed: 400,
+    allowTouchMove: false,
+    pagination: {
+      el: '.testimonials-pagination',
+      type: 'bullets',
+      clickable: true,
     },
     thumbs: {
-      swiper: eventGalleryThumbs,
+      swiper: testimonialsThumbs,
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
     },
   });
 });
