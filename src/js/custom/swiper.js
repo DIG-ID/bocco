@@ -35,7 +35,7 @@ $(function() {
     spaceBetween: 30,
     loop: true,
     speed: 400,
-    effect: 'fade',
+    effect: 'slide',
     allowTouchMove: false,
     pagination: {
       el: '.testimonials-pagination',
