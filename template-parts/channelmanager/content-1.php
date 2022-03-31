@@ -1,14 +1,14 @@
 <section id="cmcontent-1" class="section section-cmcontent-1">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-6 col-md-12 col-lg-6 col-xl-6 section-cmcontent-1__leftcol">
+			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-cmcontent-1__leftcol">
                 <div class="section-cmcontent-1__img-pack">
                     <img src="<?php echo wp_upload_dir()['url'] . '/CM_A_1.png' ?>">
                     <img class="section-cmcontent-1__img-abtop" src="<?php echo wp_upload_dir()['url'] . '/CM_A_2.png' ?>">
                     <img class="section-cmcontent-1__img-abbot" src="<?php echo wp_upload_dir()['url'] . '/CM_A_3.png' ?>">
                 </div>
 			</div>
-			<div class="col-6 col-md-12 col-lg-6 col-xl-6 section-cmcontent-1__rightcol">
+			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-cmcontent-1__rightcol">
                 <div class="section-cmcontent-1__content-wrapper">
                     <p class="section-cmcontent-1__subtitle">Insert Overline title</p>
                     <h1 class="section-cmcontent-1__title">Vorteile unserer Channel Manager</h1>

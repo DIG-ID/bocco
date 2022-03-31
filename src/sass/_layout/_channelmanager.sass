@@ -69,6 +69,7 @@
         display: block
         margin: 0 0 0 auto
         max-width: 620px
+        overflow: hidden
     &__img-abtop
         position: absolute
         left: 190px
@@ -164,3 +165,13 @@
         padding: 0 60px 0 0
     &__rightcol
         padding: 0 0 0 60px
+
+@include media-breakpoint-down(lg)
+    .section-cmintro
+        &__leftcol
+            padding: 50px 35px
+        &__content-wrapper
+            max-width: none
+            float: none
+            margin: 0
+            
