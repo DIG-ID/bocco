@@ -10,7 +10,9 @@
                 </div>
 			</div>
 			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-cmintro__rightcol">
-				image here
+                <div class="section-cmintro__img-pack">
+                    <img src="<?php echo wp_upload_dir()['url'] . '/ChannelM_Overview.png' ?>">
+                </div>
 			</div>
 		</div>
 	</div>
