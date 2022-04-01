@@ -1,13 +1,13 @@
 <section id="wbecontent-1" class="section section-wbecontent-1">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-6 col-md-12 col-lg-6 col-xl-6 section-wbecontent-1__leftcol">
+			<div class="col-12 col-md-12 col-lg-12 col-xl-6 section-wbecontent-1__leftcol">
                 <div class="section-wbecontent-1__img-pack">
                     <img class="section-wbecontent-1__img-abtop" src="<?php echo wp_upload_dir()['url'] . '/WBE_A_2.png' ?>">
                     <img class="section-wbecontent-1__img-abbot" src="<?php echo wp_upload_dir()['url'] . '/WBE_A_1.png' ?>">
                 </div>
 			</div>
-			<div class="col-6 col-md-12 col-lg-6 col-xl-6 section-wbecontent-1__rightcol">
+			<div class="col-12 col-md-12 col-lg-12 col-xl-6 section-wbecontent-1__rightcol">
                 <div class="section-wbecontent-1__content-wrapper">
                     <p class="section-cmcontent-1__subtitle">Insert Overline title</p>
                     <h1 class="section-cmcontent-1__title">Vorteile unserer Buchungsmaschine</h1>

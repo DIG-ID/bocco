@@ -8,7 +8,7 @@
             </div>
         </div>
 		<div class="row">
-			<div class="col-6 col-md-12 col-lg-6 col-xl-6 section-wbecontent-2__leftcol">
+			<div class="col-12 col-md-12 col-lg-12 col-xl-6 section-wbecontent-2__leftcol">
                 <div class="section-wbecontent-2__content-wrapper">
                     <ul class="section-wbecontent-2__list">
                         <li>Effizienteres Arbeiten dank Automatisierungen</li>
@@ -20,7 +20,7 @@
                     </ul>
                 </div>
 			</div>
-			<div class="col-6 col-md-12 col-lg-6 col-xl-6 section-wbecontent-2__rightcol">
+			<div class="col-12 col-md-12 col-lg-12 col-xl-6 section-wbecontent-2__rightcol">
                 <div class="section-wbecontent-2__content-wrapper">
                     <ul class="section-wbecontent-2__list">
                         <li>Effizienteres Arbeiten dank Automatisierungen</li>

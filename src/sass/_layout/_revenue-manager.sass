@@ -154,4 +154,74 @@
         min-width: 1080px
     &__leftcol
         padding: 0 0 0 60px
-        
+
+@include media-breakpoint-down(lg)
+    .section-rmintro
+        overflow: hidden
+        &__leftcol
+            padding: 50px 35px 25px 35px
+        &__rightcol
+            background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(77,235,179,1) 15%, rgba(77,235,179,1) 100%)
+            padding: 0px 0 50px 0
+        &__content-wrapper
+            max-width: none
+            float: none
+            margin: 0
+        &__subtitle
+            font-size: 13px
+        &__title
+            font-size: 32px
+            line-height: 32px
+        &__text
+            font-size: 16px
+        &__img-pack
+            margin-left: -40px
+        &__img-abtop
+            position: relative
+            left: 20px
+            top: 30px
+        &__img-abbot
+            position: relative
+            left: 20px
+            top: 0px
+            
+    .section-rmcontent-1
+        overflow: hidden
+        padding: 25px 35px
+        &__leftcol
+            padding: 0
+        &__rightcol
+            padding: 0
+        &__subtitle
+            font-size: 13px
+        &__title
+            font-size: 32px
+            line-height: 32px
+        &__text
+            font-size: 16px
+        &__img-abtop
+            position: absolute
+            right: auto
+            left: 100px
+            top: 50px
+        &__img-abbot
+            position: relative
+            left: -30px
+            top: 0px
+    
+    .section-rmcontent-2
+        overflow: hidden
+        padding: 25px 35px
+        &__leftcol
+            padding: 0
+        &__rightcol
+            padding: 0
+        &__subtitle
+            font-size: 13px
+        &__title
+            font-size: 32px
+            line-height: 32px
+        &__text
+            font-size: 16px
+        &__img-overflow
+            min-width: 605px
