@@ -147,3 +147,100 @@
         top: 270px
     &__leftcol
         padding: 0 0 0 60px
+
+@include media-breakpoint-down(xl)
+    .section-gdsintro
+        &__content-wrapper
+            padding-left: 35px
+    .section-gdscontent-1
+        &__content-wrapper
+            padding-right: 35px
+    .section-gdscontent-2
+        &__content-wrapper
+            padding-left: 35px
+
+@include media-breakpoint-down(lg)
+    .section-gdsintro
+        overflow: hidden
+        &__leftcol
+            padding: 50px 35px 25px 35px
+        &__rightcol
+            background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(0,64,229,1) 15%, rgba(0,64,229,1) 100%)
+            padding: 0px
+        &__content-wrapper
+            max-width: none
+            float: none
+            margin: 0
+            padding-left: 0
+        &__subtitle
+            font-size: 13px
+        &__title
+            font-size: 32px
+            line-height: 32px
+        &__text
+            font-size: 16px
+        &__img-pack
+            margin-left: 0px
+        &__img-abtop
+            position: relative
+            left: 20px
+            top: 30px
+        &__img-abbot
+            position: relative
+            left: 20px
+            top: 0px
+            
+    .section-gdscontent-1
+        overflow: hidden
+        padding: 25px 35px
+        &__leftcol
+            padding: 50px 0 80px 0
+        &__rightcol
+            padding: 0
+        &__subtitle
+            font-size: 13px
+        &__title
+            font-size: 32px
+            line-height: 32px
+        &__text
+            font-size: 16px
+        &__img-pack
+            margin: 0
+            padding-left: 5px
+        &__img-abtop
+            position: absolute
+            right: auto
+            left: 100px
+            top: 50px
+        &__img-abbot
+            position: relative
+            left: -30px
+            top: 0px
+        &__img-banner
+            top: 0px
+            right: -200px
+            left: auto
+        &__content-wrapper
+            padding-right: 0px
+    
+    .section-gdscontent-2
+        overflow: hidden
+        padding: 25px 35px
+        &__leftcol
+            padding: 0
+        &__rightcol
+            padding: 0
+        &__subtitle
+            font-size: 13px
+        &__title
+            font-size: 32px
+            line-height: 32px
+        &__text
+            font-size: 16px
+        &__img-overflow
+            min-width: 605px
+        &__content-wrapper
+            padding-left: 0px
+            float: none !important
+        &__img-abtop
+            position: relative

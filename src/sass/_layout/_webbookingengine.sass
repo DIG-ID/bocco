@@ -1,4 +1,5 @@
 .section-wbeintro
+    overflow: hidden
     margin-top: 10px
     &__leftcol
         padding: 100px 0 0px 0
@@ -43,6 +44,7 @@
         top: 160px
 
 .section-wbecontent-1
+    overflow: hidden
     padding: 130px 0
     background-color: $blue
     &__content-wrapper
@@ -67,6 +69,7 @@
         padding: 0 0 0 60px
 
 .section-wbecontent-2
+    overflow: hidden
     padding: 130px 0
     background-color: #fff
     &__subtitle
@@ -111,15 +114,29 @@
         .section-wbecontent-2__content-wrapper
             float: right
 
+@include media-breakpoint-down(xl)
+    .section-wbeintro
+        &__content-wrapper
+            padding-left: 35px
+    .section-wbecontent-1
+        &__content-wrapper
+            padding-right: 35px
+    .section-wbecontent-2
+        &__content-wrapper
+            padding-left: 35px
+
 @include media-breakpoint-down(lg)
     .section-wbeintro
         overflow: hidden
         &__leftcol
-            padding: 50px 35px 25px 35px
+            padding: 50px 25px 25px 25px
+            order: 2
         &__rightcol
             background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(0,64,229,1) 15%, rgba(0,64,229,1) 100%)
-            padding: 0px 0 50px 0
+            padding: 0px 0 100px 0
+            order: 1
         &__content-wrapper
+            padding-left: 0
             max-width: none
             float: none
             margin: 0
@@ -131,23 +148,25 @@
         &__text
             font-size: 16px
         &__img-pack
-            margin-left: -40px
+            margin-left: 15%
         &__img-abtop
             position: absolute
-            left: 40px
+            left: 80px
             top: 80px
         &__img-abbot
             position: absolute
-            left: 40px
-            top: 300px
+            left: 280px
+            top: 230px
             
     .section-wbecontent-1
         overflow: hidden
-        padding: 25px 35px
+        padding: 25px 25px
         &__leftcol
             padding: 0
+            order: 2
         &__rightcol
             padding: 0
+            order: 1
         &__subtitle
             font-size: 13px
         &__title
@@ -164,20 +183,30 @@
             position: relative
             left: -30px
             top: 0px
+        &__content-wrapper
+            padding-right: 0px
     
     .section-wbecontent-2
         overflow: hidden
-        padding: 25px 35px
+        padding: 25px 25px
         &__leftcol
             padding: 0
         &__rightcol
             padding: 0
         &__subtitle
             font-size: 13px
+            text-align: left
         &__title
             font-size: 32px
             line-height: 32px
+            text-align: left
+            margin: 0
         &__text
             font-size: 16px
         &__img-overflow
             min-width: 605px
+        &__content-wrapper
+            float: none !important
+            padding-left: 0
+        &__img
+            margin: 0

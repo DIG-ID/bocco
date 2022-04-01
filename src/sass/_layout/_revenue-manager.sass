@@ -155,6 +155,17 @@
     &__leftcol
         padding: 0 0 0 60px
 
+@include media-breakpoint-down(xl)
+    .section-rmintro
+        &__content-wrapper
+            padding-left: 35px
+    .section-rmcontent-1
+        &__content-wrapper
+            padding-right: 35px
+    .section-rmcontent-2
+        &__content-wrapper
+            padding-left: 35px
+
 @include media-breakpoint-down(lg)
     .section-rmintro
         overflow: hidden
@@ -164,6 +175,7 @@
             background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(77,235,179,1) 15%, rgba(77,235,179,1) 100%)
             padding: 0px 0 50px 0
         &__content-wrapper
+            padding-left: 0
             max-width: none
             float: none
             margin: 0
@@ -199,15 +211,20 @@
             line-height: 32px
         &__text
             font-size: 16px
+        &__img-pack
+            padding: 0px 0 50px 0
         &__img-abtop
             position: absolute
             right: auto
             left: 100px
-            top: 50px
+            top: -65px
+            min-width: 718px
         &__img-abbot
             position: relative
             left: -30px
             top: 0px
+        &__content-wrapper
+            padding-right: 0px
     
     .section-rmcontent-2
         overflow: hidden
@@ -225,3 +242,8 @@
             font-size: 16px
         &__img-overflow
             min-width: 605px
+        &__content-wrapper
+            padding-left: 0px
+            float: none !important
+        &__img-abtop
+            position: relative
