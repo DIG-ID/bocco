@@ -12,13 +12,23 @@ get_header(); ?>
 	<header class="page-header">
 		<?php the_archive_title( '<h1 class="page-title text-center">', '</h1>' ); ?>
 	</header><!-- .page-header -->
-
-	<?php while ( have_posts() ) : ?>
-		<?php the_post(); ?>
-		<section class="page-content">
-			<?php get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) ); ?>
-		</section>
-	<?php endwhile; ?>
+	<section class="page-content press-content">
+		<div class="container">
+			<div class="row">
+				<?php while ( have_posts() ) : ?>
+					<?php the_post(); ?>
+						<div class="col-12 col-md-6 col-lg-6 col-xl-4">
+							<article id="press-<?php the_ID(); ?>" <?php post_class(); ?>>
+								<p class="press-publisher"><?php the_field( 'press_publisher' ); ?></p>
+								<p class="press-date"><?php the_date( 'j F Y' ); ?></p>
+								<h2 class="press-title"><?php the_title(); ?></h2>
+								<a href="<?php the_field( 'press_pdf_file' ); ?>" target="blank" class="press-btn"><?php esc_html_e( 'Mehr erfahren', 'bocco-group' ); ?></a>
+							</article>
+						</div>
+				<?php endwhile; ?>
+			</div>
+		</div>
+	</section>
 
 <?php endif; ?>
 
