@@ -1,14 +1,14 @@
 <section id="section-products" class="section section-products">
 	<div class="container">
 		<div class="row justify-content-between">
-			<div class="col-12 col-lg-5">
+			<div class="col-12 col-md-12 col-lg-12 col-xl-5">
 				<p class="section-products__subtitle"><?php the_field( 'products_subtitle' ); ?></p>
 				<h2 class="section-products__title"><?php the_field( 'products_title' ); ?></h2>
 				<p class="section-products__description"><?php the_field( 'products_description' ); ?></p>
 			</div>
-			<div class="col-12 col-lg-7">
+			<div class="col-12 col-md-12 col-lg-12 col-xl-7">
 				<div class="row product-cards-wrapper row-eq-height">
-					<div class="col-12 col-lg-6 product-card-wrapper">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 product-card-wrapper">
 						<a href="">
 							<article class="product-card">
 								<i class="bg-icons-ChannelM"></i>
@@ -17,11 +17,8 @@
 								<span class="product-card__btn">Mehr Erfahren ➔</span>
 							</article>
 						</a>
-
-
-
 					</div	>
-					<div class="col-12 col-lg-6 product-card-wrapper">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 product-card-wrapper">
 						<a href="">
 							<article class="product-card">
 								<i class="bg-icons-WebBookingE"></i>
@@ -31,7 +28,7 @@
 							</article>
 						</a>
 					</div>
-					<div class="col-12 col-lg-6 product-card-wrapper">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 product-card-wrapper">
 						<a href="">
 							<article class="product-card">
 								<i class="bg-icons-RevenueM"></i>
@@ -41,7 +38,7 @@
 							</article>
 						</a>
 					</div>
-					<div class="col-12 col-lg-6 product-card-wrapper">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 product-card-wrapper">
 						<a href="">
 							<article class="product-card">
 								<i class="bg-icons-GDS"></i>

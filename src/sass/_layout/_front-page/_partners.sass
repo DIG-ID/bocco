@@ -15,3 +15,13 @@
   .partners-swiper
     .swiper-wrapper
       transition-timing-function: linear
+
+@include media-breakpoint-down(lg)
+  .section-partners
+    .partners-swiper
+      margin-top: 40px
+
+@include media-breakpoint-down(sm)
+  .section-partners
+    &__title
+      font-size: 34px

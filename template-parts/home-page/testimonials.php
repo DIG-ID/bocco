@@ -1,9 +1,9 @@
 <section id="section-testimonials" class="section section-testimonials">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-6">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 order-1 order-md-1 order-lg-0 order-xl-0">
 				<p class="section-testimonials__subtitle"><?php the_field( 'testimonials_subtitle' ); ?></p>
-				<h1 class="section-testimonials__title"><?php the_field( 'testimonials_title' ); ?></h1>
+				<h2 class="section-testimonials__title"><?php the_field( 'testimonials_title' ); ?></h2>
 				<div class="swiper testimonials-swiper">
 					<div class="swiper-wrapper">
 						<?php
@@ -27,7 +27,7 @@
 					<div class="swiper-pagination testimonials-pagination"></div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 order-0  order-md-0 order-lg-1 order-xl-1 px-0 px-lg-1">
 				<div class="swiper testimonials-swiper-thumbnails">
 					<div class="swiper-wrapper">
 						<?php

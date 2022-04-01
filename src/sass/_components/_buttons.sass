@@ -10,6 +10,11 @@
   border-radius: 26px
   box-shadow: 0px 10px 30px #0040E57C
   margin-bottom: 30px
+  transition: all .3s ease-in-out
+  &:hover
+    background-color: $btn-dark-blue
+    box-shadow: 0px 8px 26px transparentize($btn-dark-blue,0.6)
+    color: #fff
 
   &--demo-request
     font-size: 15px
@@ -24,3 +29,7 @@
     border: 2px solid transparent
     border-radius: 26px
     box-shadow: 0px 10px 30px #0040E57C
+    transition: all .3s ease-in-out
+    &:hover
+      background-color: $accent
+      box-shadow: 0px 6px 26px transparentize($accent, 0.7)

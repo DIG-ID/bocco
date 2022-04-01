@@ -1,7 +1,7 @@
 .section-products
   margin-top: 100px
   position: relative
-  min-height: 800px
+  min-height: 650px
   display: flex
   justify-content: center
   > .container
@@ -86,3 +86,20 @@
     text-transform: uppercase
     text-decoration: none
     color: $primary-color
+
+@include media-breakpoint-down(xl)
+  .section-products
+    min-height: 470px
+    &__description
+      margin-bottom: 60px
+
+@include media-breakpoint-down(md)
+  .section-products
+    min-height: 620px
+    &__title
+      font-size: 34px
+
+@include media-breakpoint-down(sm)
+  .section-products
+    &__title
+      font-size: 34px

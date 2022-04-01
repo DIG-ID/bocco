@@ -18,7 +18,7 @@
       margin-bottom: 40px
       transition: all .4s ease-in-out
       blockquote
-        min-height: 250px
+        min-height: 200px
         margin-bottom: 40px
         p
           font-size: 17px
@@ -73,3 +73,20 @@
     .swiper-slide-thumb-active
       img
         opacity: 1
+
+@include media-breakpoint-down(lg)
+  .section-testimonials
+    padding-top: 0px
+    .testimonials-swiper-thumbnails
+      margin-bottom: 40px
+      .swiper-slide
+        img
+          width: 100%
+          max-width: 100%
+          height: auto
+          vertical-align: middle
+
+@include media-breakpoint-down(sm)
+  .section-testimonials
+    &__title
+      font-size: 34px

@@ -1,11 +1,11 @@
 <footer id="main-footer">
 	<div class="container main-footer__container">
 		<div class="row">
-			<div class="col-5">
+			<div class="col-12 col-lg-5 footer-logo-button">
 				<?php get_template_part( 'template-parts/main-logo' ); ?>
-				<a href="/demorequest/" class="btn btn--demo-request"><?php _e( 'Demo Anfragen', 'bocco-group' ); ?></a>
+				<a href="/demo-anfragen/" class="btn btn--demo-request"><?php _e( 'Demo Anfragen', 'bocco-group' ); ?></a>
 			</div>
-			<div class="col-7">
+			<div class="col-12 col-lg-7">
 				<div class="row">
 					<?php dynamic_sidebar( 'footer_widgets' ); ?>
 					<div class="col-12">
@@ -18,13 +18,13 @@
 							$contacts_email   = get_theme_mod( 'footer_contacts_email' );
 							?>
 							<div class="row">
-								<div class="col-12">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12">
 									<h3 class="widget-title"><?php echo esc_html( $contacts_title ); ?></h3>
 								</div>
-								<div class="col-6"> 
+								<div class="col-12 col-sm-6 col-md-6 col-lg-6"> 
 									<?php echo wpautop( $contacts_address ); ?>
 								</div>
-								<div class="col-6"> 
+								<div class="col-12 col-sm-6 col-md-6 col-lg-6"> 
 									<ul class="footer-contacts-info">
 										<li><?php _e( 'Tel.', 'bocco-group' ); ?><a href="tel:<?php echo esc_attr( $contacts_tel ); ?>"> <?php echo $contacts_tel; ?></a></li>
 										<li><?php _e( 'Fax', 'bocco-group' ); ?> <?php echo esc_html( $contacts_fax ); ?></li>

@@ -12,9 +12,9 @@
 			</div>
 			<div class="col-12 col-lg-6">
 				<p class="section-services__subtitle"><?php the_field( 'services_subtitle' ); ?></p>
-				<h1 class="section-services__title"><?php the_field( 'services_title' ); ?></h1>
+				<h2 class="section-services__title"><?php the_field( 'services_title' ); ?></h2>
 				<p class="section-services__description"><?php the_field( 'services_description' ); ?></p>
-				<a href="" class="btn section-services__btn">Mehr Erfahren</a>
+				<a href="/demo-anfragen/" class="btn section-services__btn"><?php _e( 'Mehr Erfahren', 'bocco-group' ); ?></a>
 			</div>
 
 		</div>

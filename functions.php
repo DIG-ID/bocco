@@ -40,7 +40,7 @@ function boccog_theme_widgets_init() {
 		array(
 			'name'          => 'Footer Widgets',
 			'id'            => 'footer_widgets',
-			'before_widget' => '<div id="%1$s" class="col-sm-12 col-md-6 widget %2$s">',
+			'before_widget' => '<div id="%1$s" class="col-12 col-sm-6 col-md-6 col-lg-6 widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',

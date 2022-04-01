@@ -8,6 +8,8 @@ get_header();
 $description = get_the_archive_description();
 ?>
 
+<?php do_action( 'before_main_content' ); ?>
+
 <?php if ( have_posts() ) : ?>
 
 	<header class="page-header alignwide">
@@ -22,10 +24,10 @@ $description = get_the_archive_description();
 		<?php get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) ); ?>
 	<?php endwhile; ?>
 
-	<?php twenty_twenty_one_the_posts_navigation(); ?>
-
 <?php else : ?>
 	<?php get_template_part( 'template-parts/content/content-none' ); ?>
 <?php endif; ?>
 
-<?php get_footer(); ?>
+<?php do_action( 'after_main_content' ); ?>
+
+<?php get_footer();

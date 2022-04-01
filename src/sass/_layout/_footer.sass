@@ -34,7 +34,7 @@
               background: $accent
               background: linear-gradient(90deg, $accent 0%, $primary-color 100%)
               visibility: hidden
-              transition: all 0.2s ease-in-out
+              transition: all 0.3s ease-in-out
     .widget-title
       font-size: 22px
       line-height: 32px
@@ -74,7 +74,7 @@
               background: $accent
               background: linear-gradient(90deg, $accent 0%, $primary-color 100%)
               visibility: hidden
-              transition: all 0.2s ease-in-out
+              transition: all 0.3s ease-in-out
 
   .footer-nav-container
     border-top: 1px solid rgb(255 255 255 / 20%)
@@ -113,4 +113,43 @@
               background: $accent
               background: linear-gradient(90deg, $accent 0%, $primary-color 100%)
               visibility: hidden
-              transition: all 0.2s ease-in-out
+              transition: all 0.3s ease-in-out
+
+@include media-breakpoint-down(lg)
+  #main-footer
+    .main-footer__container
+      .footer-logo-button
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 80px
+      .btn--demo-request
+        display: inline-block
+        margin-bottom: 0px
+      svg
+        display: inline-block
+        margin-bottom: 0px
+
+    .footer-nav-container
+      .footer-nav-wrapper
+        justify-content: flex-start
+
+@include media-breakpoint-down(sm)
+  #main-footer
+    .main-footer__container
+      .footer-logo-button
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        margin-bottom: 40px
+      svg
+        margin-bottom: 40px
+      .widget_nav_menu
+        margin-bottom: 40px
+      .footer-contact-details
+        .footer-contacts-info
+          margin-top: 20px
+    .footer-nav-container
+      .footer-nav-wrapper
+        .footer-nav
+          flex-direction: column

@@ -1,5 +1,5 @@
 .section-services
-  padding-top: 350px
+  padding-top: 280px
   padding-bottom: 140px
   background-color: $background-grey
   &__title
@@ -19,3 +19,35 @@
     letter-spacing: 0px
     color: $body-text
     margin-bottom: 40px
+
+@include media-breakpoint-down(xxl)
+  .section-services
+    padding-top: 400px
+
+@include media-breakpoint-down(xl)
+  .section-services
+    padding-top: 680px
+
+@include media-breakpoint-down(lg)
+  .section-services
+    padding-top: 880px
+    img
+      margin-bottom: 60px
+
+@include media-breakpoint-down(md)
+  .section-services
+    padding-top: 1000px
+
+@include media-breakpoint-down(sm)
+  .section-services
+    padding-top: 1600px
+    &__title
+      font-size: 34px
+
+@media (max-width: 380px)
+  .section-services
+    padding-top: 1800px
+
+@media (max-width: 330px)
+  .section-services
+    padding-top: 1950px

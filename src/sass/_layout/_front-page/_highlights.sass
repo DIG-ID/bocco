@@ -2,7 +2,7 @@
   position: relative
   display: flex
   justify-content: center
-  padding-bottom: 450px - 250px
+  height: 190px
    
   > .container
     position: absolute
@@ -40,11 +40,11 @@
 
 @include media-breakpoint-down(xxl)
   .section-highlights
-    padding-bottom: 500px - 250px
+    height: 250px
 
 @include media-breakpoint-down(xl)
   .section-highlights
-    padding-bottom: 700px - 250px
+    height: 450px
   .highlights-card
     border-right: none
     &:last-child
@@ -59,15 +59,15 @@
       
 @include media-breakpoint-down(lg)
   .section-highlights
-    padding-bottom: 850px - 250px
+    height: 570px
 
 @include media-breakpoint-down(md)
   .section-highlights
-    padding-bottom: 1050px - 250px
+    height: 780px
 
 @include media-breakpoint-down(sm)
   .section-highlights
-    padding-bottom: 1020px - 250px
+    height: 590px
     .row 
       padding-top: 30px
   .highlights-card
@@ -84,3 +84,7 @@
       margin-bottom: 40px
     &__title
       font-size: 22px
+
+@media (max-width: 320px)
+  .section-highlights
+    height: 750px

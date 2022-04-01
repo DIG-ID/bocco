@@ -1,20 +1,20 @@
 <?php
-// Adds customizer section for the social icons.
+
+// Adds customizer section.
 $wp_customize->add_section(
-	'mega_menu_section',
+	'newsletter_section',
 	array(
-		'priority'       => 60,
+		'priority'       => 70,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => __( 'Mega Menu', 'bocco-group' ),
-		'description'    => __( 'Edit the content for the mega menu/sub menu.', 'bocco-group' ),
+		'title'          => __( 'Newsletter', 'bocco-group' ),
+		'description'    => __( 'Place to edit the Newsletter content', 'bocco-group' ),
 		'panel'          => 'boccog_theme_panel',
 	)
 );
 
-
 $wp_customize->add_setting(
-	'mega_menu_title',
+	'newsletter_title',
 	array(
 		'default'           => '',
 		'type'              => 'theme_mod',
@@ -26,17 +26,17 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	new WP_Customize_Control(
 		$wp_customize,
-		'mega_menu_title',
+		'newsletter_title',
 		array(
 			'label'   => __( 'Title', 'bocco-group' ),
 			'type'    => 'text',
-			'section' => 'mega_menu_section',
+			'section' => 'newsletter_section',
 		)
 	)
 );
 
 $wp_customize->add_setting(
-	'mega_menu_description',
+	'newsletter_description',
 	array(
 		'default'           => '',
 		'type'              => 'theme_mod',
@@ -48,56 +48,33 @@ $wp_customize->add_setting(
 $wp_customize->add_control(
 	new WP_Customize_Control(
 		$wp_customize,
-		'mega_menu_description',
+		'newsletter_description',
 		array(
 			'label'   => __( 'Description', 'bocco-group' ),
 			'type'    => 'textarea',
-			'section' => 'mega_menu_section',
+			'section' => 'newsletter_section',
 		)
 	)
 );
 
 $wp_customize->add_setting(
-	'mega_menu_btn_title',
+	'newsletter_shortcode',
 	array(
 		'default'           => '',
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
 		'transport'         => 'refresh',
-		'sanitize_callback' => 'esc_html',
+		'sanitize_callback' => 'esc_attr',
 	)
 );
 $wp_customize->add_control(
 	new WP_Customize_Control(
 		$wp_customize,
-		'mega_menu_btn_title',
+		'newsletter_shortcode',
 		array(
-			'label'   => __( 'Button Title', 'bocco-group' ),
+			'label'   => __( 'Shortcode', 'bocco-group' ),
 			'type'    => 'text',
-			'section' => 'mega_menu_section',
-		)
-	)
-);
-
-
-$wp_customize->add_setting(
-	'mega_menu_btn_link',
-	array(
-		'default'           => '',
-		'type'              => 'theme_mod',
-		'capability'        => 'edit_theme_options',
-		'transport'         => 'refresh',
-		'sanitize_callback' => 'esc_url',
-	)
-);
-$wp_customize->add_control(
-	new WP_Customize_Control(
-		$wp_customize,
-		'mega_menu_btn_link',
-		array(
-			'label'   => __( 'Button Link', 'bocco-group' ),
-			'type'    => 'url',
-			'section' => 'mega_menu_section',
+			'section' => 'newsletter_section',
 		)
 	)
 );

@@ -27,6 +27,13 @@
     box-shadow: none
     margin: 0px
     white-space: nowrap
+    transition: all .3s ease-in-out
+    &:hover
+      background-color: $accent
+      color: #fff
+      border-color: $accent
+    &:focus
+      box-shadow: none
 
 @include media-breakpoint-down(lg)
   .section-banner
