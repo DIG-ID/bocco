@@ -8,7 +8,7 @@
   .navbar
     padding-top: 1rem
     padding-bottom: 1rem
-    //height: 100vh
+    //height: 100vh 
     //align-items: flex-start
     > .container
       padding-left: 0px
@@ -16,7 +16,7 @@
       margin: 0px auto
     #main-nav
       border-top: 1px solid #707070
-      height: 100vh
+      height: calc( 100vh - 142px )
       margin-top: 40px
       > .menu-item
         border-bottom: 1px solid #707070
@@ -35,23 +35,42 @@
 
 
       .menu-item-has-children.dropdown
+        a.dropdown-toggle
+          transition: all 0.3s ease-in-out
+          &::after
+            transition: all 0.3s ease-in-out
+        a.dropdown-toggle.show
+          color: $primary-color
+          &::after
+            transform: rotate(180deg)
 
         .dropdown-menu
           background-color: transparent
           border: none
           border-radius: 0px
+          padding: 0
+          padding-left: 50px
+          margin: 0
+          margin-bottom: 10px
           .sub-menu
             list-style: none
             padding: 0px
             margin: 0px
             li
-              
+              padding: 10px 20px
+              &:first-of-type
+                display: none
               a
                 display: none
-            &__title
-              display: block
+              a.sub-menu__title
+                display: block
+                text-decoration: none
+                color: #080F26
+                font-size: 27px
+                line-height: 32px
+                padding-bottom
             &__description
-              display: none
+              display: none 
 
       .btn--demo-request
         padding: 0px
@@ -84,6 +103,7 @@
   .navbar
     #main-nav
       margin-top: 20px
+      height: calc( 100vh - 102px )
       > .menu-item
         > a
           font-size: 18px
@@ -91,6 +111,21 @@
           &:first-of-type
             &::after
               margin-top: 10px
+      .menu-item-has-children.dropdown
+        .dropdown-menu
+          padding-left: 40px
+          .sub-menu
+            margin-bottom: 20px
+            li
+              padding: 10px
+              a.sub-menu__title
+                font-size: 17px
+                line-height: 1
+      .btn--demo-request
+        margin-right: 20px
+        margin-left: 20px
+        a
+          font-size: 15px
 
   .navbar.navbar-dark
     .navbar-brand
@@ -133,16 +168,33 @@
             width: 100%
       .menu-item-has-children.dropdown
         position: static
+        .dropdown-toggle
+          transition: all 0.3s ease-in-out
+          &::after
+            transition: all 0.3s ease-in-out
+        .dropdown-toggle.show
+          &::before
+            visibility: visible
+            width: 100%
+          &::after
+            transform: rotate(180deg)
         .dropdown-menu
+          display: block
           width: 100%
-          max-width: 100%
-          min-width: 100%
+          left: 0
+          right: 0
           margin: 0
           padding: 100px 0px
           background-color: #EDF1FD
           border: none
           border-radius: 0px
-          transition: all 400ms ease-in-out
+          box-shadow: 0px 10px 30px 0px #1b286526
+          overflow: hidden
+          transform-origin: top center
+          transform: scale(1,0)
+          transition: all 0.3s ease-in-out
+        .dropdown-menu.show
+          transform: scale(1)
           .sub-menu
             max-width: 1280px
             display: grid
@@ -153,23 +205,55 @@
             padding: 0px 15px
             margin: 0px auto
             list-style-type: none
-            &__title
-              font: normal normal normal 27px/32px 'Roboto'
-              letter-spacing: -0.81px
-              color: #0F1429
-              margin: 10px 0px 20px 0px
-            &__description
-              font: normal normal normal 17px/30px 'Roboto'
-              letter-spacing: 0px
-              color: #6E727D
-              margin: 0px 0px 20px 0px
             li
               border-top: 5px solid #48E8AC
               margin-right: 60px
+              &:first-of-type
+                .sub-menu__title
+                  font: normal normal normal 27px/32px 'Roboto'
+                  letter-spacing: -0.81px
+                  color: #0F1429
+                  margin: 0px 0px 20px 0px
+                .sub-menu__description
+                  font: normal normal normal 17px/30px 'Roboto'
+                  letter-spacing: 0px
+                  color: #6E727D
+                  margin: 0px 0px 30px 0px
+                .demo-btn
+                  background-color: $primary-color
+                  color: #fff
+                  padding: 15px 30px
+                  border-radius: 50px
+                  display: inline-block
+                  box-shadow: 0px 10px 30px #0040E57C
+                  transition: all .3s ease-in-out
+                  &:hover
+                    background-color: $btn-dark-blue
+                    box-shadow: 0px 8px 26px transparentize($btn-dark-blue,0.6)
+                    color: #fff
               a
                 text-decoration: none
                 color: black
-                font-weight: medium
+                font-weight: 400
+                transition: all .3s ease-in-out
+                &:last-of-type
+                  text-transform: uppercase
+                  font-size: 15px
+                  font-weight: 600
+                  letter-spacing: 0.3px
+                  &:hover
+                    color: $primary-color
+              a.sub-menu__title
+                margin-top: 15px
+                margin-bottom: 15px
+                display: block
+                font-size: 27px
+                letter-spacing: 0.3px
+              .sub-menu__description
+                margin-bottom: 15px
+                font-size: 17px
+                letter-spacing: 0px
+                color: #6E727D
               &:nth-child(1)
                 grid-area: 1 / 1 / 3 / 2
                 border-top: none
@@ -185,10 +269,6 @@
               &:nth-child(5)
                 grid-area: 2 / 3 / 3 / 4
                 margin-right: 0px
-        .dropdown-menu.show
-          //transform: translateY(0)
-          //opacity: 1
-          //visibility: visible
 
 
       .btn--demo-request
