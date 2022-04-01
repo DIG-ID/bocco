@@ -9,15 +9,15 @@
 			</div>
 			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-wbecontent-1__rightcol">
                 <div class="section-wbecontent-1__content-wrapper">
-                    <p class="section-cmcontent-1__subtitle">Insert Overline title</p>
-                    <h1 class="section-cmcontent-1__title">Vorteile unserer Buchungsmaschine</h1>
+                    <p class="section-cmcontent-1__subtitle"><?php echo the_field('advantages_subtitle'); ?></p>
+                    <h1 class="section-cmcontent-1__title"><?php echo the_field('advantages_title'); ?></h1>
                     <ul class="section-cmcontent-1__list">
-                        <li>Performance orientierte Technologie</li>
-                        <p>Die Buchungsmaschine von Simple Booking ist Performance orientiert aufgebaut und wir stets in diese Richtung weiterentwickelt. Die einfache Handhabung für den Gast sowie die Möglichkeiten der Angebotsdarstellung für den Hotelier, sorgen dafür, dass Sie mehr Kommissionsfreie Buchungen über Ihre eigene Hotelwebseite erhalten.</p>
-                        <li>Einfache Handhabung</li>
-                        <p>Das Backend von Simple Booking ist einfach und übersichtlich aufgebaut. So können Sie Ihre Einstellungen ohne grossen zeitlich Aufwand, direkt im System vornehmen. </p>
-                        <li>Detaillierte Analysemöglichkeiten</li>
-                        <p>Dank den Möglichkeiten im Bereich der Reportings, direkt im Backend der Buchungsmaschine, können Sie ganz einfach strategische Entscheidungen treffen und so Ihre Umsätze weiter steigern.</p>
+                    <?php
+                        if( have_rows('advantages_advantages_list') ):
+                            while( have_rows('advantages_advantages_list') ) : the_row(); ?>
+                                <li><?php echo the_sub_field('list_title_field'); ?></li>
+                                <p><?php echo the_sub_field('list_description_field'); ?></p>
+                        <?php endwhile; endif; ?>
                     </ul>
                 </div>
 			</div>

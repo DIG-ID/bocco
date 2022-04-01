@@ -16,7 +16,7 @@
                         <?php
                         if( have_rows('advantages_advantages_list') ):
                             while( have_rows('advantages_advantages_list') ) : the_row(); ?>
-                                <li><?php echo the_sub_field('list_title'); ?></li>
+                                <li><?php echo the_sub_field('list_title_field'); ?></li>
                                 <p><?php echo the_sub_field('list_description_field'); ?></p>
                         <?php endwhile; endif; ?>
                     </ul>

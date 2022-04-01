@@ -3,13 +3,15 @@
 		<div class="row">
 			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-gdscontent-2__leftcol">
                 <div class="section-gdscontent-2__content-wrapper">
-                    <p class="section-gdscontent-2__subtitle">Insert  Title</p>
-                    <h1 class="section-gdscontent-2__title">Funktionen unseres GDS</h1>
+                    <p class="section-gdscontent-2__subtitle"><?php echo the_field('functions_subtitle'); ?></p>
+                    <h1 class="section-gdscontent-2__title"><?php echo the_field('functions_title'); ?></h1>
                     <ul class="section-gdscontent-2__list">
-                        <li>Anbindung von Galileo, Sabre und Amadeus</li>
-                        <p>Durch die Anbindung über unser Central Reservation System (CRS) erhalten alle GDS, wie Galileo, Sabre und Amadeus, Zugriff auf Ihre Verfügbarkeiten und Preise und können die Zimmer bei Ihnen bequem Online buchen.</p>
-                        <li>Preise und Verfügbarkeiten pflegen</li>
-                        <p>Dank einer Anbindung an Ihren Channel Manager werden die Preise, Verfügbarkeiten und Restriktionen im GDS automatisch aktualisiert und Sie erhalten die Reservationen bequem zurückgespielt.</p>
+                    <?php
+                        if( have_rows('functions_functions_list') ):
+                            while( have_rows('functions_functions_list') ) : the_row(); ?>
+                                <li><?php echo the_sub_field('list_title_field'); ?></li>
+                                <p><?php echo the_sub_field('list_description_field'); ?></p>
+                        <?php endwhile; endif; ?>
                     </ul>
                 </div>
 			</div>

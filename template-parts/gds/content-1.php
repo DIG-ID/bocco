@@ -11,13 +11,15 @@
 			</div>
 			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-gdscontent-1__rightcol">
                 <div class="section-gdscontent-1__content-wrapper">
-                    <p class="section-gdscontent-1__subtitle">Insert Overline title</p>
-                    <h1 class="section-gdscontent-1__title">Vorteile unserer<br>Channel Manager</h1>
+                    <p class="section-gdscontent-1__subtitle"><?php echo the_field('advantages_subtitle'); ?></p>
+                    <h1 class="section-gdscontent-1__title"><?php echo the_field('advantages_title'); ?></h1>
                     <ul class="section-gdscontent-1__list">
-                        <li>Mehr Sichtbarkeit auf dem Markt</li>
-                        <p>Durch eine Anbindung am Globalen Distribution System (GDS) erhalten Tour Operator und grosse Unternehmen die Möglichkeit online Zimmer bei Ihnen zu buchen.</p>
-                        <li>Automatisierung von TO und Corporate Buchungen</li>
-                        <p>Nie mehr manuelle Anfragen von Tour Operator bearbeiten? Dies ist dank einer Anbindung am GDS möglich. Die TO buchen hier Ihr Zimmer ganz einfach online und die Reservationen werden automatisch an Sie übermittelt.</p>
+                    <?php
+                        if( have_rows('advantages_advantages_list') ):
+                            while( have_rows('advantages_advantages_list') ) : the_row(); ?>
+                                <li><?php echo the_sub_field('list_title_field'); ?></li>
+                                <p><?php echo the_sub_field('list_description_field'); ?></p>
+                        <?php endwhile; endif; ?>
                     </ul>
                 </div>
 			</div>

@@ -3,13 +3,15 @@
 		<div class="row">
 			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-rmcontent-2__leftcol">
                 <div class="section-rmcontent-2__content-wrapper">
-                    <p class="section-rmcontent-2__subtitle">Insert  Title</p>
-                    <h1 class="section-rmcontent-2__title">Funktionen Rate Shopper</h1>
+                    <p class="section-rmcontent-2__subtitle"><?php echo the_field('functions_subtitle'); ?></p>
+                    <h1 class="section-rmcontent-2__title"><?php echo the_field('functions_title'); ?></h1>
                     <ul class="section-rmcontent-2__list">
-                        <li>Individuelles Comp-Set</li>
-                        <p>In unserem Rate Shopper können Sie Ihr individuelles Compset zusammenstellen und die Preise der Betriebe anzeigen lassen, die Sie als direkte Konkurrenten definieren.</p>
-                        <li>Live Check der Preise und Verfügbarkeiten</li>
-                        <p>Durch den Live Check haben Sie die Möglichkeit die Preise und Verfügbarkeiten Ihrer Konkurrenten in Echtzeit zu prüfen und zu analysieren. So treffen Sie bestimmt die richtigen entscheidungen.</p>
+                    <?php
+                        if( have_rows('functions_functions_list') ):
+                            while( have_rows('functions_functions_list') ) : the_row(); ?>
+                                <li><?php echo the_sub_field('list_title_field'); ?></li>
+                                <p><?php echo the_sub_field('list_description_field'); ?></p>
+                        <?php endwhile; endif; ?>
                     </ul>
                 </div>
 			</div>

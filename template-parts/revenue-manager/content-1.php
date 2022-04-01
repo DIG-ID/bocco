@@ -9,13 +9,15 @@
 			</div>
 			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-rmcontent-1__rightcol">
                 <div class="section-rmcontent-1__content-wrapper">
-                    <p class="section-rmcontent-1__subtitle">Insert Overline title</p>
-                    <h1 class="section-rmcontent-1__title">Vorteile unserer Revenue Management Lösungen</h1>
+                    <p class="section-rmcontent-1__subtitle"><?php echo the_field('advantages_subtitle'); ?></p>
+                    <h1 class="section-rmcontent-1__title"><?php echo the_field('advantages_title'); ?></h1>
                     <ul class="section-rmcontent-1__list">
-                        <li>Behalten Sie den Markt im Auge</li>
-                        <p>Ihre Preisstrategie ist von vielen Faktoren abhängig. Einer der wichtigsten ist die Preisentwicklung des Marktes und Ihrer Konkurrenz. Dank unserem System erhalten Sie einen LIVE Einblick in die Zimmerpreise alle Betriebe in Ihrem individuellen Competitor Set.</p>
-                        <li>Mehr Umsatz durch bessere Preisentscheidungen</li>
-                        <p>Dank unseren Revenue Management Systemen erhalten Sie mehr Kontrolle und können fundierte Preisentscheidungen treffen. Somit sparen Sie nicht nur Zeit, sondern erhalten zukünftig auch mehr Reservationen zu einem besseren Preis.</p>
+                    <?php
+                        if( have_rows('advantages_advantages_list') ):
+                            while( have_rows('advantages_advantages_list') ) : the_row(); ?>
+                                <li><?php echo the_sub_field('list_title_field'); ?></li>
+                                <p><?php echo the_sub_field('list_description_field'); ?></p>
+                        <?php endwhile; endif; ?>
                     </ul>
                 </div>
 			</div>
