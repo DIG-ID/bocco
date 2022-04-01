@@ -193,8 +193,6 @@
           transform-origin: top center
           transform: scale(1,0)
           transition: all 0.3s ease-in-out
-        .dropdown-menu.show
-          transform: scale(1)
           .sub-menu
             max-width: 1280px
             display: grid
@@ -269,6 +267,8 @@
               &:nth-child(5)
                 grid-area: 2 / 3 / 3 / 4
                 margin-right: 0px
+        .dropdown-menu.show
+          transform: scale(1)
 
 
       .btn--demo-request
