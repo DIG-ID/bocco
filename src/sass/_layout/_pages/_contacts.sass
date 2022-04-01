@@ -1,0 +1,61 @@
+.acf-map
+  width: 100%
+  border: #ccc solid 1px
+  img
+    max-width: inherit !important
+
+.acf-map.map-contacts
+  height: 520px
+
+.contact-content
+  background-color: $background-grey
+  padding-bottom: 20px
+.contact-box
+  text-align: center
+  padding-top: 80px
+  padding-bottom: 40px
+  background-color: #fff
+  position: relative
+  margin-bottom: 120px
+  box-shadow: 0px 0px 30px #EAEAEA80
+  &__title
+    font-size: 24px
+    font-weight: bold
+    letter-spacing: 0.3px
+    margin-bottom: 20px
+  i
+    position: absolute
+    top: -45px
+    left: 50%
+    width: 90px
+    height: 90px
+    text-align: center
+    transform: translateX(-50%)
+    font-size: 34px
+    color: #fff
+    background-color: $primary-color
+    //padding: 20px
+    border-radius: 100px
+    box-shadow: 0px 10px 60px transparentize( $primary-color, 0.8)
+    display: flex
+    justify-content: center
+    align-items: center
+  p, ul, li, a
+    color: $body-text
+    font-size: 17px
+    line-height: 30px
+    letter-spacing: 0px
+    text-decoration: none
+    margin-bottom: 0px
+  ul
+    list-style: none
+    padding: 0px
+    margin: 0px
+
+@include media-breakpoint-down(lg)
+  .acf-map.map-contacts
+    height: 300px
+
+@include media-breakpoint-down(sm)
+  .acf-map.map-contacts
+    display: none
