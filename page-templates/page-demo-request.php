@@ -9,7 +9,7 @@
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="page-header">
 				<div class="container">
-					<div class="row justify-content-center align-item-center">
+					<div class="row justify-content-center align-items-center">
 						<div class="col">
 							<p class="page-subtitle text-center"><?php the_field( 'demo_request_subtitle' ); ?></p>
 							<h1 class="page-title text-center"><?php echo wp_kses_post( wpautop( get_field( 'demo_request_title' ) ) ); ?></h1>

@@ -15,7 +15,7 @@
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="page-header">
 				<div class="container">
-					<div class="row justify-content-center align-item-center">
+					<div class="row justify-content-center align-items-center">
 						<div class="col">
 							<h1 class="page-title text-center"><?php echo wpautop( get_field( 'contact_title' ) ); ?></h1>
 						</div>
