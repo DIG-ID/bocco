@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-cmcontent-3__rightcol">
                 <div class="section-cmcontent-3__content-wrapper">
-                    <p class="section-cmcontent-3__subtitle">Insert Overline title</p>
+                    <p class="section-cmcontent-3__subtitle">Ihr Distributions-Partner</p>
                     <h1 class="section-cmcontent-3__title">Set Up & Support</h1>
                     <ul class="section-cmcontent-3__list">
                         <li>Restriktionen setzen</li>
