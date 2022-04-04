@@ -9,7 +9,7 @@
 			<div class="col-12 col-md-12 col-lg-12 col-xl-7">
 				<div class="row product-cards-wrapper row-eq-height">
 					<div class="col-12 col-sm-6 col-md-6 col-lg-6 product-card-wrapper">
-						<a href="">
+						<a href="/products/channel-manager/">
 							<article class="product-card">
 								<i class="bg-icons-ChannelM"></i>
 								<h3 class="product-card__title">Channel Manager</h3>
@@ -19,7 +19,7 @@
 						</a>
 					</div	>
 					<div class="col-12 col-sm-6 col-md-6 col-lg-6 product-card-wrapper">
-						<a href="">
+						<a href="/products/web-booking-engine/">
 							<article class="product-card">
 								<i class="bg-icons-WebBookingE"></i>
 								<h3 class="product-card__title">Buchungsmaschine</h3>
@@ -29,7 +29,7 @@
 						</a>
 					</div>
 					<div class="col-12 col-sm-6 col-md-6 col-lg-6 product-card-wrapper">
-						<a href="">
+						<a href="/products/revenue-manager/">
 							<article class="product-card">
 								<i class="bg-icons-RevenueM"></i>
 								<h3 class="product-card__title">Revenue Management</h3>
@@ -39,7 +39,7 @@
 						</a>
 					</div>
 					<div class="col-12 col-sm-6 col-md-6 col-lg-6 product-card-wrapper">
-						<a href="">
+						<a href="/products/gds/">
 							<article class="product-card">
 								<i class="bg-icons-GDS"></i>
 								<h3 class="product-card__title">GDS</h3>

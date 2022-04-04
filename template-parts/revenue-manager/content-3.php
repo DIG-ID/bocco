@@ -6,8 +6,8 @@
 			</div>
 			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-cmcontent-3__rightcol">
                 <div class="section-cmcontent-3__content-wrapper">
-                    <p class="section-cmcontent-3__subtitle">Insert Overline title</p>
-                    <h1 class="section-cmcontent-3__title">Ihr Distributions-Partner</h1>
+                    <p class="section-cmcontent-3__subtitle">Ihr Distributions-Partner</p>
+                    <h1 class="section-cmcontent-3__title">Set Up & Support</h1>
                     <ul class="section-cmcontent-3__list">
                         <li>Restriktionen setzen</li>
                         <p>Danke unserem Set Up Service und Support sparen Sie Zeit. Wir unterstützen Sie bei dem Aufsetzen der einzelnen Lösungen und bieten Ihnen den Support den Sie brauchen, dass Sie sich auf das wesentliche konzentrieren können.</p>
