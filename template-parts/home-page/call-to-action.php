@@ -5,7 +5,7 @@
 				<p class="section-cta__title"><?php the_field( 'call_to_action_title' ); ?></p>
 			</div>
 			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
-				<a href="<?php the_field( 'call_to_action_page_link' ); ?>" class="btn section-cta__btn"><?php _e( 'Contact Us', 'bocco-goup' ); ?></a>
+				<a href="<?php the_field( 'call_to_action_page_link' ); ?>" class="btn section-cta__btn"><?php _e( 'Kontaktieren Sie uns', 'bocco-goup' ); ?></a>
 			</div>
 		</div>
 	</div>
