@@ -10,7 +10,7 @@ get_header(); ?>
 <?php if ( have_posts() ) : ?>
 
 	<header class="page-header">
-		<?php the_archive_title( '<h1 class="page-title text-center">', '</h1>' ); ?>
+		<h1 class="page-title text-center"><?php esc_html_e( 'Presseartikel', 'bocco-group' ); ?></h1>	
 	</header><!-- .page-header -->
 	<section class="page-content press-content">
 		<div class="container">
