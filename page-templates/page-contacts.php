@@ -28,7 +28,7 @@
 						<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 ">
 							<div class="contact-box contact-box__location">
 								<i class="bg-icons-Location"></i>
-								<h2 class="contact-box__title"><?php esc_html_e( 'Our Location', 'bocco-group' ); ?></h2>
+								<h2 class="contact-box__title"><?php esc_html_e( 'Adresse', 'bocco-group' ); ?></h2>
 								<?php echo wpautop( $contacts_address ); ?>
 							</div>
 						</div>

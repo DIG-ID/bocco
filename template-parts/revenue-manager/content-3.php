@@ -9,8 +9,7 @@
                     <p class="section-cmcontent-3__subtitle">Ihr Distributions-Partner</p>
                     <h1 class="section-cmcontent-3__title">Set Up & Support</h1>
                     <ul class="section-cmcontent-3__list">
-                        <li>Restriktionen setzen</li>
-                        <p>Danke unserem Set Up Service und Support sparen Sie Zeit. Wir unterstützen Sie bei dem Aufsetzen der einzelnen Lösungen und bieten Ihnen den Support den Sie brauchen, dass Sie sich auf das wesentliche konzentrieren können.</p>
+                        <p>Danke unserem Service und Support sparen Sie Zeit und können sich auf das Wesentliche konzentrieren. Wir unterstützen Sie beim Aufsetzen der einzelnen Lösungen und bieten Ihnen fortlaufend den Support den Sie brauchen.</p>
                     </ul>
                 </div>
 			</div>
