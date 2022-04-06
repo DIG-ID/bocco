@@ -129,15 +129,17 @@
             padding-left: 35px
 
 @include media-breakpoint-down(lg)
+    .main-content
+        overflow: hidden
     .section-wbeintro
         overflow: hidden
         &__leftcol
             padding: 50px 25px 25px 25px
-            order: 2
+            order: 1
         &__rightcol
             background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(0,64,229,1) 15%, rgba(0,64,229,1) 100%)
             padding: 0px 0 0px 0
-            order: 1
+            order: 2
         &__content-wrapper
             padding-left: 0
             max-width: none

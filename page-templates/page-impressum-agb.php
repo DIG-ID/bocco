@@ -11,7 +11,7 @@
 				<div class="container">
 					<div class="row justify-content-center align-items-center">
 						<div class="col">
-							<h1 class="page-title text-center"><?php echo wp_kses_post( wpautop( get_field( 'legal_info_title' ) ) ); ?></h1>
+							<h1 class="page-title text-center"><?php echo get_the_title(); ?></h1>
 						</div>
 					</div>
 				</div>
