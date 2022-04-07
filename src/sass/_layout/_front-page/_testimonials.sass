@@ -77,12 +77,11 @@
 
 @include media-breakpoint-down(lg)
   .section-testimonials
-    padding-top: 0px
+    padding-top: 80px
     .testimonials-swiper-thumbnails
       margin-bottom: 40px
       .swiper-slide
         img
-          width: 100%
           max-width: 100%
           height: auto
           vertical-align: middle
@@ -91,3 +90,8 @@
   .section-testimonials
     &__title
       font-size: 34px
+    .testimonials-swiper-thumbnails
+      .swiper-slide
+        img
+          width: 90%
+          margin-left: 15px
