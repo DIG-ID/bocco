@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-servicescontent-2__leftcol">
                 <div class="section-servicescontent-2__img-pack">
-                    <img class="section-cmcontent-3__img-svg" src="<?php echo wp_upload_dir()['url'] . '/03_Support.svg' ?>">
+                    <img class="section-servicescontent-2__img-svg-floatright" src="<?php echo wp_upload_dir()['url'] . '/03_Support.svg' ?>">
                 </div>
 			</div>
 			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-servicescontent-2__rightcol">
