@@ -187,7 +187,7 @@ if ( ! class_exists( 'Custom_Walker_Nav_Menu' ) ) :
 				$item_output  = $args->before;
 				$item_output .= '<a' . $attributes . '><div class="sub-menu__title" ' . $attributes . '>' . $title . '</div>';
 				$item_output .= '<p class="sub-menu__description">' . $menu_item->description . '</p>';
-				$item_output .= '<div' . $attributes . '>';
+				$item_output .= '<div class="sub-menu__more-link-btn"' . $attributes . '>';
 				$item_output .= $args->link_before . __( 'Mehr Erfahren ➔', 'bocco-group' ) . $args->link_after;
 				$item_output .= '</div></a>';
 				$item_output .= $args->after;
