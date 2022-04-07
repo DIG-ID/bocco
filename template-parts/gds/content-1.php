@@ -5,8 +5,9 @@
 			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-gdscontent-1__leftcol">
                 <div class="section-gdscontent-1__img-pack">
                     <img class="section-gdscontent-1__img-logo1" src="<?php echo wp_upload_dir()['url'] . '/Logo_Sabre.svg' ?>">
-                    <img class="section-gdscontent-1__img-logo2" src="<?php echo wp_upload_dir()['url'] . '/Logo_Pegasus.svg' ?>">
-                    <img class="section-gdscontent-1__img-logo3" src="<?php echo wp_upload_dir()['url'] . '/Logo_Amadeus.svg' ?>">
+                    <img class="section-gdscontent-1__img-logo2" src="<?php echo wp_upload_dir()['url'] . '/Logo_Dhisco.png' ?>">
+                    <img class="section-gdscontent-1__img-logo1" src="<?php echo wp_upload_dir()['url'] . '/Logo_Amadeus.svg' ?>">
+                    <img class="section-gdscontent-1__img-logo1" src="<?php echo wp_upload_dir()['url'] . '/Logo_Travelport.svg' ?>">
                 </div>
 			</div>
 			<div class="col-12 col-md-12 col-lg-6 col-xl-6 section-gdscontent-1__rightcol">
