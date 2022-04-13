@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-12 col-lg-5 footer-logo-button">
 				<?php get_template_part( 'template-parts/main-logo' ); ?>
-				<a href="/demo-anfragen/" class="btn btn--demo-request"><?php _e( 'Demo Anfragen', 'bocco-group' ); ?></a>
+				<a href="/demo-anfragen/" class="btn btn--demo-request"><?php _e( 'Anfrage Senden', 'bocco-group' ); ?></a>
 			</div>
 			<div class="col-12 col-lg-7">
 				<div class="row">
