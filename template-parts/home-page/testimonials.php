@@ -34,7 +34,7 @@
 						if ( have_rows( 'testimonials_customer_testimonials' ) ) :
 							while ( have_rows( 'testimonials_customer_testimonials' ) ) : the_row();
 								$testi_image_thumb = get_sub_field( 'customer_image' );
-								echo '<div class="swiper-slide">' . wp_get_attachment_image( $testi_image_thumb, 'full' ) . '</div>';
+								echo '<div class="swiper-slide text-center text-md-start text-lg-start text-xl-end">' . wp_get_attachment_image( $testi_image_thumb, 'full' ) . '</div>';
 							endwhile;
 						endif;
 						?>

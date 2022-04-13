@@ -68,6 +68,10 @@
     .swiper-slide
       img
         opacity: 0
+        max-width: 100%
+        height: auto
+        vertical-align: middle
+        object-fit: cover
         transition: all .3s ease-in-out
         border-radius: 30px
 
@@ -80,11 +84,7 @@
     padding-top: 0px
     .testimonials-swiper-thumbnails
       margin-bottom: 40px
-      .swiper-slide
-        img
-          max-width: 100%
-          height: auto
-          vertical-align: middle
+
 
 @include media-breakpoint-down(sm)
   .section-testimonials
@@ -93,5 +93,5 @@
     .testimonials-swiper-thumbnails
       .swiper-slide
         img
-          width: 90%
-          margin-left: 15px
+          width: 100%
+          border-radius: 0px
