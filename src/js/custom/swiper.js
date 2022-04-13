@@ -2,10 +2,11 @@ import Swiper from 'swiper/bundle';
 
 $(function() {
   const partnersSwiper = new Swiper('.partners-swiper', {
-    slidesPerView: 3,
+    //slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
     speed: 6000,
+    slidesPerView: 'auto',
     autoplay: {
       delay: 1,
       disableOnInteraction: false,
