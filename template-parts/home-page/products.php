@@ -16,7 +16,7 @@
 							$product_description = get_sub_field('description');
 							$product_link        = get_sub_field('link');
 							?>
-							<div class="col-12 col-sm-6 col-md-6 col-lg-6 product-card-wrapper">
+							<div class="col-12 col-sm-12 col-md-6 col-lg-6 product-card-wrapper">
 								<a href="<?php echo esc_url( $product_link ); ?>">
 									<article class="product-card">
 										<i class="<?php echo esc_attr( $product_icon ); ?>"></i>

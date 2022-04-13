@@ -19,7 +19,7 @@
 			<section class="page-content about-us-content">
 				<div class="container">
 					<div class="row justify-content-between align-items-center">
-						<div class="col-12 col-lg-6">
+						<div class="col-12 col-lg-6 text-center text-sm-center text-md-start">
 						<?php
 							$image = get_field( 'about_us_content_image' );
 							$size  = 'full';
@@ -57,7 +57,7 @@
 									$member_name     = get_sub_field( 'name' );
 									$member_position = get_sub_field( 'position' );
 									?>
-									<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 text-center">
+									<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 text-center">
 										<div class="team-member text-center">
 											<?php echo wp_get_attachment_image( $member_image, 'full' ); ?>
 											<div class="team-member__details">

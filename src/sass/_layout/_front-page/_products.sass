@@ -88,13 +88,21 @@
     text-decoration: none
     color: $primary-color
 
-@include media-breakpoint-down(xl)
+@include media-breakpoint-down(xxl)
   .product-card
     min-height: 458px
+
+@include media-breakpoint-down(xl)
+  .product-card
+    min-height: auto
   .section-products
-    min-height: 470px
+    min-height: 600px
     &__description
       margin-bottom: 60px
+
+@include media-breakpoint-down(lg)
+  .product-card
+    min-height: 458px
 
 @include media-breakpoint-down(md)
   .section-products
