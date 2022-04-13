@@ -14,7 +14,7 @@
 							$contacts_title   = get_theme_mod( 'footer_contacts_title' );
 							$contacts_address = get_theme_mod( 'footer_contacts_address' );
 							$contacts_tel     = get_theme_mod( 'footer_contacts_tel' );
-							$contacts_fax     = get_theme_mod( 'footer_contacts_fax' );
+							//$contacts_fax     = get_theme_mod( 'footer_contacts_fax' );
 							$contacts_email   = get_theme_mod( 'footer_contacts_email' );
 							?>
 							<div class="row">
@@ -27,7 +27,7 @@
 								<div class="col-12 col-sm-6 col-md-6 col-lg-6"> 
 									<ul class="footer-contacts-info">
 										<li><?php _e( 'Tel.', 'bocco-group' ); ?><a href="tel:<?php echo esc_attr( $contacts_tel ); ?>"> <?php echo $contacts_tel; ?></a></li>
-										<li><?php _e( 'Fax', 'bocco-group' ); ?> <?php echo esc_html( $contacts_fax ); ?></li>
+										<!--<li><?php //_e( 'Fax', 'bocco-group' ); ?> <?php //echo esc_html( $contacts_fax ); ?></li>-->
 										<li><?php _e( 'Mail:', 'bocco-group' ); ?> <a href="mailto:<?php echo esc_attr( $contacts_email ); ?>"><?php echo $contacts_email; ?></a></li>
 									</ul>
 								</div>
