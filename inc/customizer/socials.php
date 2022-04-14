@@ -4,7 +4,7 @@
 $wp_customize->add_section(
 	'social_section',
 	array(
-		'priority'       => 80,
+		'priority'       => 90,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
 		'title'          => __( 'Socials', 'shs-a' ),

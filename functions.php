@@ -100,6 +100,8 @@ function boccog_sanitize_image( $file, $setting ) {
 		'bmp'          => 'image/bmp',
 		'tif|tiff'     => 'image/tiff',
 		'ico'          => 'image/x-icon',
+		'svg'          => 'image/svg+xml',
+		'svgz'         => 'image/svg+xml',
 	);
 
 	// Check file type from file name

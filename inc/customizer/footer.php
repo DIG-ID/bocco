@@ -4,7 +4,7 @@
 $wp_customize->add_section(
 	'footer_section',
 	array(
-		'priority'       => 90,
+		'priority'       => 100,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
 		'title'          => __( 'Footer', 'bocco-group' ),
