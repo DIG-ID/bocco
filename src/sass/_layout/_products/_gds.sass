@@ -137,14 +137,23 @@
         left: 90px
         top: -20px
         min-width: 614px
+        max-width: 100%
+        height: auto
+        object-fit: cover
     &__img-abbot
         position: absolute
         left: 100px
         top: -45px
+        max-width: 100%
+        height: auto
+        object-fit: cover
     &__img-abbot2
         position: absolute
         left: 300px
         top: 270px
+        max-width: 100%
+        height: auto
+        object-fit: cover
     &__leftcol
         padding: 0 0 0 60px
 
@@ -244,6 +253,8 @@
         &__content-wrapper
             padding-left: 0px
             float: none !important
+        &__img-pack
+            margin-bottom: 150px
         &__img-abtop
             position: relative
             left: 0
@@ -253,3 +264,5 @@
         &__img-abbot2
             left: 115px
             top: 270px
+
+@include media-breakpoint-down(sm)
