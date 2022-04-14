@@ -135,12 +135,16 @@ require get_template_directory() . '/inc/theme-customizer.php';
 // Custom navigation walker.
 require get_template_directory() . '/inc/custom-nav-walker.php';
 
+// Theme custom admin settings.
+require get_template_directory() . '/inc/theme-admin-settings.php';
 
-function console_log($output, $with_script_tags = true) {
+
+
+/*function console_log($output, $with_script_tags = true) {
 	$js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
 ');';
 	if ($with_script_tags) {
 			$js_code = '<script>' . $js_code . '</script>';
 	}
 	echo $js_code;
-}
+}*/
