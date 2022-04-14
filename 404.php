@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<?php do_action( 'before_main_content' ); ?>
-			<section class="page-content 404-content">
+			<section class="page-content notfound-content">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 text-center">

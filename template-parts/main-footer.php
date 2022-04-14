@@ -41,7 +41,7 @@
 	<section class="footer-nav-container">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 footer-nav-content">
 					<?php
 					wp_nav_menu(
 						array(
@@ -55,6 +55,7 @@
 						)
 					);
 					?>
+					<p><?php esc_html_e( 'Developed by:', 'bocco-group' ); ?> <a href="https://dig.id" target="_blank"><?php echo esc_html( 'dig.id' ); ?></a></p>
 				</div>
 			</div>
 		</div>
