@@ -1,0 +1,28 @@
+#button-btt
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $btn-dark-blue
+  width: 50px
+  height: 50px
+  text-align: center
+  border-radius: 25px
+  position: fixed
+  bottom: 30px
+  right: 30px
+  transition: background-color .3s, opacity .5s, visibility .5s
+  opacity: 0
+  visibility: hidden
+  z-index: 1000
+  &:active
+    background-color: $background-green
+  &:hover
+    cursor: pointer
+    background-color: $primary-color
+  svg
+    width: 20px
+    fill: #fff
+  
+#button-btt.show
+  opacity: 1
+  visibility: visible
