@@ -17,89 +17,193 @@
 
     var styles = [
       {
-          "featureType": "administrative",
-          "elementType": "labels.text.fill",
-          "stylers": [
-              {
-                  "color": "#444444"
-              }
-          ]
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#28446a"
+          }
+        ]
       },
       {
-          "featureType": "landscape",
-          "elementType": "all",
-          "stylers": [
-              {
-                  "color": "#f2f2f2"
-              }
-          ]
+        "elementType": "labels.icon",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
       },
       {
-          "featureType": "poi",
-          "elementType": "all",
-          "stylers": [
-              {
-                  "visibility": "off"
-              }
-          ]
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#f9f8f6"
+          }
+        ]
       },
       {
-          "featureType": "road",
-          "elementType": "all",
-          "stylers": [
-              {
-                  "saturation": -100
-              },
-              {
-                  "lightness": 45
-              }
-          ]
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#adadad"
+          },
+          {
+            "weight": 0.5
+          }
+        ]
       },
       {
-          "featureType": "road.highway",
-          "elementType": "all",
-          "stylers": [
-              {
-                  "visibility": "simplified"
-              }
-          ]
+        "featureType": "administrative.neighborhood",
+        "elementType": "labels",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
       },
       {
-          "featureType": "road.arterial",
-          "elementType": "labels.icon",
-          "stylers": [
-              {
-                  "visibility": "off"
-              }
-          ]
+        "featureType": "administrative.province",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
       },
       {
-          "featureType": "transit",
-          "elementType": "all",
-          "stylers": [
-              {
-                  "visibility": "off"
-              }
-          ]
+        "featureType": "poi",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#192a44"
+          }
+        ]
       },
       {
-          "featureType": "water",
-          "elementType": "all",
-          "stylers": [
-              {
-                  "color": "#aeaeae"
-              },
-              {
-                  "visibility": "on"
-              }
-          ]
+        "featureType": "poi.business",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#192a44"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.medical",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#192a44"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#375179"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.sports_complex",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#192a44"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#183954"
+          },
+          {
+            "visibility": "on"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#193a56"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway.controlled_access",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#193a56"
+          }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#202c3e"
+          }
+        ]
+      },
+      {
+        "featureType": "transit.station.airport",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#202c3e"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#192331"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#f9f8f6"
+          }
+        ]
       }
     ]
 
   
     // Create gerenic map.
     var mapArgs = {
-      zoom        : $el.data('zoom') || 16,
+      zoom: $el.data('zoom') || 12,
       styles: styles,
       mapTypeId   : google.maps.MapTypeId.ROADMAP,
       zoomControlOptions: {
