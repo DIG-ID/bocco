@@ -262,7 +262,7 @@
       position : latLng,
       map: map,
       icon: {
-        url: "https://kongresszentrumkreuz.ch/wp-content/uploads/kreuz_hotel_bern_mapmarker.png",
+        url: "https://boccogroup.com/wp-content/uploads/icon.png",
       }
     });
   
