@@ -1,6 +1,6 @@
 {
-    "/main.js": "/main.js?id=5d9e5a435a195f1c747d947be5e1e1ab",
-    "/google-maps.js": "/google-maps.js?id=9f36e1fd2dd0f5a0de26f07e86309af7",
-    "/admin-login.css": "/admin-login.css?id=ffcf736b234873f34a24e3626608ba59",
-    "/main.css": "/main.css?id=3ffb706dc10b46e857fbfe454af1ebab"
+    "/main.js": "/main.js",
+    "/google-maps.js": "/google-maps.js",
+    "/admin-login.css": "/admin-login.css",
+    "/main.css": "/main.css"
 }

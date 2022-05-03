@@ -37,4 +37,25 @@
       &:hover
         background-color: $btn-dark-blue
         color: #fff
-      
+
+.post-type-archive-press-articles
+  .page-header
+    padding-top: 80px
+    padding-bottom: 80px
+    position: relative
+    z-index: 1
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 2
+      background-color: transparent
+      background-image: url('/wp-content/uploads/Header.svg')
+      background-position: top center
+      background-repeat: no-repeat
+      background-size: cover
+      background-attachment: fixed
