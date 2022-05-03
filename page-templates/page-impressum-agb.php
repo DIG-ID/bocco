@@ -19,7 +19,7 @@
 			<section class="page-content about-us-content">
 				<div class="container">
 					<div class="row justify-content-between align-items-center">
-						<div class="col-12 col-lg-6">
+						<div class="col-12 col-lg-6 legal-info-box">
 							<?php echo get_field('legal_info_content'); ?>
 						</div>
 					</div>
