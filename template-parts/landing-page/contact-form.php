@@ -1,6 +1,6 @@
 <?php $cf = get_field( 'contact_form' ); ?>
 <?php if ( $cf ) : ?>
-	<section class="page-content demo-request-content">
+	<section id="section-kontakt" class="page-content demo-request-content">
 		<div class="container">
 			<div class="row justify-content-center align-items-center">
 				<div class="col">
