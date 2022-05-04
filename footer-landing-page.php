@@ -7,7 +7,7 @@
 						</div>
 						<div class="footer-buttons-wrapper">
 							<a href="/demo-anfragen/" class="btn btn--demo-request"><?php _e( 'Anfrage Senden', 'bocco-group' ); ?></a>
-							<a href="https://boccogroup.com/" class="btn btn--demo-request"><?php _e( 'Visit Bocco', 'bocco-group' ); ?></a>
+							<a href="https://boccogroup.com/" class="btn btn--demo-request"><?php _e( 'Zur Bocco Webseite', 'bocco-group' ); ?></a>
 						</div>
 					</div>
 				</div>

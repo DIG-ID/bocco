@@ -3,8 +3,9 @@
 	<section id="section-offers" class="section-offers">
 		<div class="container">
 			<div class="row justify-content-center align-items-center">
-				<div class="col">
+				<div class="col-12 col-lg-8">
 					<h2 class="section-title text-center text-white"><?php echo esc_html( $offers['section_title'] ); ?></h2>
+					<p class="section-subtitle text-center text-white"><?php echo wp_kses_post( $offers['section_subtitle'] ); ?></p>
 				</div>
 			</div>
 			<div class="row justify-content-center ">
@@ -21,14 +22,10 @@
 								</div>
 								<p class="offer-card__price"><?php the_sub_field( 'price' ); ?></p>
 							</div>
+							<p class="info-notes text-white px-5"><?php the_sub_field( 'info_notes' ); ?></p>
 						</div>
 					<?php endwhile; ?>
 				<?php endif; ?>
-			</div>
-			<div class="row justify-content-center align-items-center">
-				<div class="col">
-					<p class="section-legend text-center text-white"><?php echo wp_kses_post( $offers['information_text'] ); ?></p>
-				</div>
 			</div>
 		</div>
 	</section>
