@@ -13,4 +13,4 @@ get_header( 'landing-page' ); ?>
 		get_template_part( 'template-parts/landing-page/contact-form' );
 		?>
 	<?php do_action( 'after_main_content' ); ?>
-<?php get_footer();
+<?php get_footer( 'landing-page' );

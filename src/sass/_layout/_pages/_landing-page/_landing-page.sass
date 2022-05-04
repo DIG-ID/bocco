@@ -4,14 +4,43 @@
 @import '_offers'
 
 .page-template-page-landing-page
+
+  .fancybox__content
+    padding: 0
+
+  .fancybox__carousel .fancybox__slide.has-iframe .fancybox__content
+    height: 90%
   .main-content
     padding-top: 120px
   .demo-request-content
     .page-title
       margin-bottom: 60px
+    .wpcf7
+      input[type="submit"]
+        font-family: $roboto
+        font-weight: bold
 
-.landing-page-header
-  background-color: #fff
-  .custom-logo-link
-    .st0
-      fill: #000
+.landing-page-footer
+  .footer-logo-button
+    .footer-logo
+      margin: 0 auto 60px auto
+      width: 230px
+      height: auto
+      svg
+        width: 100%
+        height: auto
+        margin-bottom: 0
+        display: inline-block
+
+  .footer-buttons-wrapper
+    margin-bottom: 60px
+    .btn
+      &:first-of-type
+        margin-right: 40px
+
+  .footer-contact-details
+    .widget-title
+      margin-bottom: 40px !important
+    .footer-contacts-info
+      margin-bottom: 40px !important
+

@@ -7,9 +7,8 @@ function boccog_theme_setup() {
 
 	register_nav_menus(
 		array(
-			'main-nav'    => __( 'Main Menu', 'bocco-group' ),
-			'footer-nav'  => __( 'Footer Menu', 'bocco-group' ),
-			'landing-nav' => __( 'Landing Page Menu', 'bocco-group' ),
+			'main-nav'   => __( 'Main Menu', 'bocco-group' ),
+			'footer-nav' => __( 'Footer Menu', 'bocco-group' ),
 		)
 	);
 
