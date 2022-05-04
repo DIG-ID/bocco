@@ -11,12 +11,11 @@
     letter-spacing: 0px
     margin-bottom: 80px
   .info-notes
-    margin-top: 20px
     margin-bottom: 0px
-    padding: 0px 15px
-    font-size: 15px
+    font-size: 12px
+    font-style: italic
     line-height: 18px
-    text-align: center
+    color: #6E727D
   .offer-card-column
     margin-bottom: 60px
     &:first-of-type
@@ -32,9 +31,10 @@
     justify-content: space-between
     height: 100%
     border-radius: 15px
-    padding: 40px 40px 60px 40px
+    padding: 40px
     background-color: #fff
     margin: 0px 15px 20px 15px
+    box-shadow: 0px 10px 60px #FFFFFF4D
     img
       position: absolute
       top: -20px
@@ -55,13 +55,16 @@
       color: $primary-color
       margin-bottom: 20px
       &--items
-        font-size: 17px
-        line-height: 30px
-        margin-bottom: 40px
+        margin-bottom: 30px
+        ul
+          li
+            font-family: $roboto
+            font-size: 17px
+            line-height: 30px
 
     &__price
       font-size: 42px
       font-weight: bold
       line-height: 30px
       color: $primary-color
-      margin: 0
+      margin-bottom: 20px

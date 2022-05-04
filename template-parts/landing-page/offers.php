@@ -14,18 +14,25 @@
 						<div class="col-12 col-sm-12 col-md-6 col-lg-4 offer-card-column">
 							<div class="offer-card">
 								<?php echo wp_get_attachment_image( get_sub_field( 'image' ), 'full' ); ?>
-								<div>
+								<div class="offer-card__content-wrapper">
 									<h3 class="offer-card__title"><?php the_sub_field( 'title' ); ?></h3>
-									<span class="offer-card__legend"><?php _e( '(nur DE)' ); ?></span>
+									<span class="offer-card__legend"><?php the_sub_field( 'title_legend' ); ?></span>
 									<p class="offer-card__includes"><?php _e( 'Includes' ); ?></p>
-									<p class="offer-card__includes--items"><?php the_sub_field( 'includes' ); ?></p>
+									<div class="offer-card__includes--items"><?php the_sub_field( 'includes' ); ?></div>
 								</div>
-								<p class="offer-card__price"><?php the_sub_field( 'price' ); ?></p>
+								<div class="offer-card__price-wrapper">
+									<p class="offer-card__price"><?php the_sub_field( 'price' ); ?></p>
+									<p class="info-notes"><?php the_sub_field( 'info_notes' ); ?></p>
+								</div>
 							</div>
-							<p class="info-notes text-white"><?php the_sub_field( 'info_notes' ); ?></p>
 						</div>
 					<?php endwhile; ?>
 				<?php endif; ?>
+			</div>
+			<div class="row justify-content-center align-items-center">
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8">
+					<p class="section-notes text-white text-center"><?php echo esc_html( $offers['section_notes'] ); ?></p>
+				</div>
 			</div>
 		</div>
 	</section>
