@@ -8,7 +8,9 @@
 					$block_description = get_sub_field( 'description' );
 					?>
 					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 highlights-card">
-						<i class="<?php echo $block_icon; ?>"></i>
+						<div class="img-wrapper">
+							<?php echo wp_get_attachment_image( $block_icon, 'full' ); ?>
+						</div>
 						<div class="highlights-card__content">
 							<p class="highlights-card__description"><?php echo $block_description; ?></p>
 						</div>

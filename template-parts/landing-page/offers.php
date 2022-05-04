@@ -22,7 +22,7 @@
 								</div>
 								<p class="offer-card__price"><?php the_sub_field( 'price' ); ?></p>
 							</div>
-							<p class="info-notes text-white px-5"><?php the_sub_field( 'info_notes' ); ?></p>
+							<p class="info-notes text-white"><?php the_sub_field( 'info_notes' ); ?></p>
 						</div>
 					<?php endwhile; ?>
 				<?php endif; ?>

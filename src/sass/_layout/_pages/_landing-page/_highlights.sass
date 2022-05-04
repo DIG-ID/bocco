@@ -10,5 +10,30 @@
       background-color: #080F26
 
     .highlights-card
-      i
-        color: $accent
+      &:first-child
+        .img-wrapper
+          margin-left: 15px
+          margin-right: 25px
+          img
+            width: 120px
+      .img-wrapper
+        padding-top: 10px
+        margin-right: 40px
+        img
+          width: 110px
+          max-width: 100%
+          height: auto
+
+@include media-breakpoint-down(sm)
+  .page-template-page-landing-page
+    .section-highlights
+      .highlights-card
+        &:first-child
+          .img-wrapper
+            margin-left: 0
+        .img-wrapper
+          margin-right: 0px
+          margin-bottom: 30px
+          padding-left: 20px
+          img
+            width: 50px
