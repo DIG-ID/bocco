@@ -3,7 +3,7 @@
 	<section id="section-offers" class="section-offers">
 		<div class="container">
 			<div class="row justify-content-center align-items-center">
-				<div class="col-12 col-lg-8">
+				<div class="col-12 col-lg-10">
 					<h2 class="section-title text-center text-white"><?php echo esc_html( $offers['section_title'] ); ?></h2>
 					<p class="section-subtitle text-center text-white"><?php echo wp_kses_post( $offers['section_subtitle'] ); ?></p>
 				</div>
@@ -17,7 +17,7 @@
 								<div class="offer-card__content-wrapper">
 									<h3 class="offer-card__title"><?php the_sub_field( 'title' ); ?></h3>
 									<span class="offer-card__legend"><?php the_sub_field( 'title_legend' ); ?></span>
-									<p class="offer-card__includes"><?php _e( 'Includes' ); ?></p>
+									<p class="offer-card__includes"><?php _e( 'Inklusive:' ); ?></p>
 									<div class="offer-card__includes--items"><?php the_sub_field( 'includes' ); ?></div>
 								</div>
 								<div class="offer-card__price-wrapper">
