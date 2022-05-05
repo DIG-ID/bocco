@@ -56,3 +56,22 @@
     .footer-contacts-info
       margin-bottom: 40px !important
 
+@include media-breakpoint-down(lg)
+  #main-footer
+    .main-footer__container
+      .footer-logo-button
+        display: block !important
+    
+  .landing-page-footer
+    .footer-buttons-wrapper
+      .btn:first-of-type
+        margin-right: 20px !important
+        margin-bottom: 20px !important
+      .btn:last-of-type
+        margin-bottom: 20px !important
+
+@include media-breakpoint-down(md)
+  .landing-page-footer
+    .footer-buttons-wrapper
+      .btn:first-of-type
+        margin-right: 0 !important
