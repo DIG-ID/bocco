@@ -11,7 +11,7 @@
 			<div class="row justify-content-center ">
 				<?php if ( have_rows( 'offers_offers_item' ) ) : ?>
 					<?php while ( have_rows( 'offers_offers_item' ) ) : the_row(); ?>
-						<div class="col-12 col-sm-12 col-md-6 col-lg-4 offer-card-column">
+						<div class="col-12 col-sm-12 col-md-9 col-lg-8 col-xl-4 offer-card-column">
 							<div class="offer-card">
 								<?php echo wp_get_attachment_image( get_sub_field( 'image' ), 'full' ); ?>
 								<div class="offer-card__content-wrapper">

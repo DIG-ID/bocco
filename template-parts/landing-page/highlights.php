@@ -12,7 +12,7 @@
 							<?php echo wp_get_attachment_image( $block_icon, 'full' ); ?>
 						</div>
 						<div class="highlights-card__content">
-							<p class="highlights-card__description"><?php echo $block_description; ?></p>
+							<p class="highlights-card__description ps-5"><?php echo $block_description; ?></p>
 						</div>
 					</div>
 				<?php endwhile; ?>
