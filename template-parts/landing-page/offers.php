@@ -3,9 +3,9 @@
 	<section id="section-offers" class="section-offers">
 		<div class="container">
 			<div class="row justify-content-center align-items-center">
-				<div class="col-12 col-lg-10">
+				<div class="col-12 col-lg-6">
 					<h2 class="section-title text-center text-white"><?php echo esc_html( $offers['section_title'] ); ?></h2>
-					<p class="section-subtitle text-center text-white"><?php echo wp_kses_post( $offers['section_subtitle'] ); ?></p>
+					<p class="text-center text-white mb-5"><?php echo wp_kses_post( $offers['section_subtitle'] ); ?></p>
 				</div>
 			</div>
 			<div class="row justify-content-center ">
