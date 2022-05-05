@@ -5,7 +5,7 @@
 			<div class="row justify-content-center align-items-center">
 				<div class="col-12 col-lg-6">
 					<h2 class="section-title text-center text-white"><?php echo esc_html( $offers['section_title'] ); ?></h2>
-					<p class="text-center text-white mb-5"><?php echo wp_kses_post( $offers['section_subtitle'] ); ?></p>
+					<p class="text-center text-white pb-4 mb-5"><?php echo wp_kses_post( $offers['section_subtitle'] ); ?></p>
 				</div>
 			</div>
 			<div class="row justify-content-center ">
