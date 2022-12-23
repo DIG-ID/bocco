@@ -1,0 +1,278 @@
+.section-gjintro
+    overflow: hidden
+    margin-top: 10px
+    &__leftcol
+        padding: 50px 0 130px 0
+    &__rightcol
+        padding: 50px 0 130px 0
+        background-color: $background-green
+    &__subtitle
+        font-family: $roboto
+        font-size: 18px
+        text-transform: uppercase
+        color: $electric-blue
+    &__title
+        font-family: $roboto
+        font-size: 75px
+        font-weight: 400
+        line-height: 75px
+        letter-spacing: -0.1px
+        color: $blue
+        margin-bottom: 25px
+    &__title-text
+        font-family: $roboto
+        font-size: 42px
+        line-height: 55px
+        color: $blue
+        max-width: 400px
+    &__text
+        font-family: $roboto
+        font-size: 17px
+        line-height: 30px
+        color: $body-text
+        max-width: 425px
+        margin-bottom: 50px
+    &__content-wrapper
+        max-width: 450px
+        float: right
+        margin-right: 230px
+        margin-top: 80px
+    &__img-pack
+        position: relative
+        display: block
+        margin-left: -120px
+    &__img-abtop
+        position: absolute
+        left: 0px
+        top: 30px
+        max-width: 100%
+        height: auto
+        object-fit: cover
+    &__img-abbot
+        position: absolute
+        left: 0px
+        top: 590px
+        min-width: 778px
+        max-width: 100%
+        height: auto
+        object-fit: cover
+
+.section-gjcontent-1
+    padding: 130px 0 200px 0
+    background-color: $background-grey
+    &__subtitle
+        font-family: $roboto
+        font-size: 18px
+        text-transform: uppercase
+        color: $electric-blue
+    &__title
+        font-family: $roboto
+        font-size: 42px
+        font-weight: 400
+        color: $blue
+        margin-bottom: 30px
+    &__list
+        list-style: none
+        li
+            font-family: $roboto
+            font-size: 22px
+            color: $blue
+            position: relative
+            &::before
+                content: "●"
+                color: $electric-blue
+                display: inline-block
+                width: 1em
+                margin-left: -1em
+        p
+            font-family: $roboto
+            font-size: 17px
+            color: $body-text
+            max-width: 460px
+            margin-bottom: 30px
+    &__content-wrapper
+        max-width: 530px
+    &__img-pack
+        position: relative
+        display: block
+        margin: 0 0 0 auto
+    &__img-abbot
+        position: absolute
+        right: 0px
+        top: -50px
+        max-width: 100%
+        height: auto
+        object-fit: cover
+    &__img-abtop
+        position: absolute
+        right: -100px
+        top: 190px
+        max-width: 100%
+        height: auto
+        object-fit: cover
+    &__leftcol
+        z-index: 4
+    &__rightcol
+        z-index: 5
+        padding: 0 0 0 60px
+
+.section-gjcontent-2
+    overflow: hidden
+    padding: 130px 0 300px 0
+    background-color: #fff
+    &__subtitle
+        font-family: $roboto
+        font-size: 18px
+        text-transform: uppercase
+        color: $electric-blue
+    &__title
+        font-family: $roboto
+        font-size: 42px
+        font-weight: 400
+        color: $blue
+        margin-bottom: 30px
+    &__list
+        list-style: none
+        li
+            font-family: $roboto
+            font-size: 22px
+            color: $blue
+            position: relative
+            &::before
+                content: "●"
+                color: $electric-blue
+                display: inline-block
+                width: 1em
+                margin-left: -1em
+        p
+            font-family: $roboto
+            font-size: 17px
+            color: $body-text
+            max-width: 460px
+            margin-bottom: 30px
+    &__content-wrapper
+        max-width: 490px
+        float: right
+    &__img-pack
+        position: relative
+    &__img-abbot
+        position: absolute
+        left: 0px
+        top: 0px
+        max-width: 100%
+        height: auto
+        object-fit: cover
+    &__img-abtop
+        position: absolute
+        left: 65px
+        top: 300px
+        min-width: 440px
+        max-width: 100%
+        height: auto
+        object-fit: cover
+    &__leftcol
+        padding: 0 0 0 60px
+
+.section-gjcontent-3
+    &__img-abbot
+        position: absolute
+        left: 170px
+        top: 150px
+        max-width: 100%
+        height: auto
+        object-fit: cover
+
+@include media-breakpoint-down(xl)
+    .section-gjintro
+        &__content-wrapper
+            padding-left: 35px
+    .section-gjcontent-1
+        &__content-wrapper
+            padding-right: 35px
+    .section-gjcontent-2
+        &__content-wrapper
+            padding-left: 35px
+
+@include media-breakpoint-down(lg)
+    .section-gjintro
+        overflow: hidden
+        &__leftcol
+            padding: 50px 35px 25px 35px
+        &__rightcol
+            background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(77,235,179,1) 15%, rgba(77,235,179,1) 100%)
+            padding: 0px 0 50px 0
+        &__content-wrapper
+            padding-left: 0
+            max-width: none
+            float: none
+            margin: 0
+        &__subtitle
+            font-size: 13px
+        &__title
+            font-size: 32px
+            line-height: 32px
+        &__title-text
+            font-size: 32px
+        &__text
+            font-size: 16px
+        &__img-pack
+            margin-left: -40px
+        &__img-abtop
+            position: relative
+            left: 20px
+            top: 30px
+        &__img-abbot
+            position: relative
+            left: 20px
+            top: 0px
+            
+    .section-gjcontent-1
+        overflow: hidden
+        padding: 25px 35px
+        &__leftcol
+            padding: 0
+        &__rightcol
+            padding: 0
+        &__subtitle
+            font-size: 13px
+        &__title
+            font-size: 32px
+            line-height: 32px
+        &__text
+            font-size: 16px
+        &__img-pack
+            padding: 0px 0 50px 0
+        &__img-abtop
+            position: absolute
+            right: auto
+            left: 100px
+            top: -65px
+            min-width: 718px
+        &__img-abbot
+            position: relative
+            left: -30px
+            top: 0px
+        &__content-wrapper
+            padding-right: 0px
+    
+    .section-gjcontent-2
+        overflow: hidden
+        padding: 25px 35px
+        &__leftcol
+            padding: 0
+        &__rightcol
+            padding: 0
+        &__subtitle
+            font-size: 13px
+        &__title
+            font-size: 32px
+            line-height: 32px
+        &__text
+            font-size: 16px
+        &__img-overflow
+            min-width: 605px
+        &__content-wrapper
+            padding-left: 0px
+            float: none !important
+        &__img-abtop
+            position: relative
