@@ -27,7 +27,7 @@
 					<div class="swiper-pagination testimonials-pagination"></div>
 				</div>
 			</div>
-			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 order-0 order-md-0 order-lg-1 order-xl-1 px-0 px-lg-1">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 order-0 order-md-0 order-lg-1 order-xl-1 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-1">
 				<div class="swiper testimonials-swiper-thumbnails">
 					<div class="swiper-wrapper">
 						<?php
