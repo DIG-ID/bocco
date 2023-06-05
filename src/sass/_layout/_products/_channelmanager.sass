@@ -5,6 +5,11 @@
     &__rightcol
         padding: 130px 0 50px 0
         background-color: $background-green
+        img
+            max-width: 100%
+            width: 100%
+            height: auto
+
     &__subtitle
         font-family: $roboto
         font-size: 18px
@@ -284,3 +289,8 @@
             font-size: 16px
         &__img-svg
             float: none
+
+@include media-breakpoint-down(md)
+    .section-cmintro
+        &__rightcol
+            padding: 40px 0 0
