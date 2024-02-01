@@ -56,14 +56,23 @@
 											<span><?php esc_html_e( 'Zeit:', 'bocco-group' ); ?></span><br>
 											<?php the_field( 'duration' ); ?>
 										</p>
-										<p class="card-webinar-details--item">
-											<span><?php esc_html_e( 'Host:', 'bocco-group' ); ?></span><br>
-											<?php the_field( 'host' ); ?>
-										</p>
+										<?php
+										if ( get_field( 'have_host' ) ) :
+											?>
+											<p class="card-webinar-details--item mb-0">
+												<span><?php esc_html_e( 'Host:', 'bocco-group' ); ?></span><br>
+												<?php the_field( 'host' ); ?>
+											</p>
+											<?php
+										endif;
+										?>
 									</div>
-									<div class="col-8">
-										<span><?php esc_html_e( 'Beschreibung:', 'bocco-group' ); ?></span><br>
-										<?php the_content(); ?>
+									<div class="col-8 card-webinar-details--description">
+										<div class="card-webinar-details--item">
+											<span><?php esc_html_e( 'Beschreibung:', 'bocco-group' ); ?></span><br>
+											<?php the_content(); ?>
+										</div>
+
 										<?php
 										$card_link = get_field( 'link' );
 										if ( $card_link ) :
@@ -71,7 +80,12 @@
 											$link_title  = $card_link['title'];
 											$link_target = $card_link['target'] ? $card_link['target'] : '_self';
 											?>
-											<a class="card-webinar-details--button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+											<a class="card-webinar-details--button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
+												<svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
+													<path d="M14 10C11.33 10 6 11.33 6 14V16H22V14C22 11.33 16.67 10 14 10ZM5 6V3H3V6H0V8H3V11H5V8H8V6M14 8C15.0609 8 16.0783 7.57857 16.8284 6.82843C17.5786 6.07828 18 5.06087 18 4C18 2.93913 17.5786 1.92172 16.8284 1.17157C16.0783 0.421427 15.0609 0 14 0C12.9391 0 11.9217 0.421427 11.1716 1.17157C10.4214 1.92172 10 2.93913 10 4C10 5.06087 10.4214 6.07828 11.1716 6.82843C11.9217 7.57857 12.9391 8 14 8Z" fill="#EDF1FD"/>
+												</svg>
+												<?php echo esc_html( $link_title ); ?>
+											</a>
 											<?php
 										endif;
 										?>

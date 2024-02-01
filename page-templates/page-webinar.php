@@ -9,7 +9,7 @@ get_header( 'webinar' ); ?>
 		get_template_part( 'template-parts/webinar/hero' );
 		get_template_part( 'template-parts/webinar/intro' );
 		get_template_part( 'template-parts/webinar/loop' );
-		get_template_part( 'template-parts/webinar/newsletter' );
+		//get_template_part( 'template-parts/webinar/newsletter' );
 		?>
 	<?php do_action( 'after_main_content' ); ?>
 <?php get_footer( 'webinar' );
