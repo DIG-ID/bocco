@@ -38,10 +38,10 @@
 				$webinar_query->the_post();
 				?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'row card-webinar-wrapper' ); ?>>
-					<div class="col-10">
+					<div class="col-11">
 						<div class="card-webinar row">
 							<div class="col-2 text-center">
-								<img class="webinar-thumbnail pe-4" src="<?php echo get_template_directory_uri(); ?>/src/images/boccowebinar-post.svg" alt="bocco webinar event image thumbnail">
+								<img class="webinar-thumbnail" src="<?php echo get_template_directory_uri(); ?>/src/images/boccowebinar-post.svg" alt="bocco webinar event image thumbnail">
 							</div>
 							<div class="col-10">
 								<h3><?php the_title(); ?></h3>
