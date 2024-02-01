@@ -33,6 +33,28 @@
 			</div>
 		</div>
 	</div>
+	<section class="footer-nav-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 footer-nav-content">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'footer-nav',
+							'menu_class'      => 'footer-nav',
+							'menu_id'         => 'footer-nav',
+							'container_class' => 'footer-nav-wrapper',
+							'container_id'    => 'footer-nav-wrapper',
+							'walker'          => '',
+							'fallback_cb'     => '',
+						)
+					);
+					?>
+					<p><?php esc_html_e( 'Developed by:', 'bocco-group' ); ?> <a href="https://dig.id" target="_blank"><?php echo esc_html( 'dig.id' ); ?></a></p>
+				</div>
+			</div>
+		</div>
+	</section>
 </footer>
 
 		<a id="button-btt">
