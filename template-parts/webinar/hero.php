@@ -1,7 +1,7 @@
 <section class="section-webinar-hero" style="background: url( <?php echo get_template_directory_uri(); ?>/src/images/boccowebinar-hero-bg-2.svg ); background-position: center center; background-size: cover; background-repeat: no-repeat;">
 	<div class="container">
 		<div class="row">
-			<div class="col webinar-logo">
+			<div class="col-12 webinar-logo">
 				<img src="<?php echo get_template_directory_uri(); ?>/src/images/boccowebinar.svg" alt="bocco-webinar logo">
 			</div>
 		</div>

@@ -40,10 +40,7 @@
         opacity: 1
       .card-webinar-details
         &--description
-          display: flex
-          flex-direction: column
-          justify-content: space-between
-          align-items: flex-start
+
         &--item
           color: $background-dark
           font-family: $roboto
@@ -76,6 +73,7 @@
           display: inline-flex
           justify-content: space-between
           align-items: center
+          margin-top: 26px
           &:hover
             background-color: $btn-dark-blue
             box-shadow: 0px 8px 26px transparentize($btn-dark-blue,0.6)
@@ -98,7 +96,7 @@
       &:last-of-type
         margin-bottom: 52px
       .card-webinar
-        padding: 38px
+        padding: 38px 32px
         box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.15)
         .webinar-thumbnail
           width: 56px
@@ -109,4 +107,4 @@
           &--description
             display: block
           &--button
-            margin-top: 20px
+            margin-top: 26px

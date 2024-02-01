@@ -59,7 +59,7 @@
 										<?php
 										if ( get_field( 'have_host' ) ) :
 											?>
-											<p class="card-webinar-details--item mb-0">
+											<p class="card-webinar-details--item">
 												<span><?php esc_html_e( 'Host:', 'bocco-group' ); ?></span><br>
 												<?php the_field( 'host' ); ?>
 											</p>
@@ -69,7 +69,7 @@
 									</div>
 									<div class="col-12 col-lg-8 card-webinar-details--description">
 										<div class="card-webinar-details--item mb-2">
-											<span><?php esc_html_e( 'Beschreibung:', 'bocco-group' ); ?></span><br>
+											<span><?php esc_html_e( 'Inhalt:', 'bocco-group' ); ?></span><br>
 											<?php the_content(); ?>
 										</div>
 
