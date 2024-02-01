@@ -38,16 +38,16 @@
 				$webinar_query->the_post();
 				?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'row card-webinar-wrapper' ); ?>>
-					<div class="col-11">
+					<div class="col-12 col-lg-11">
 						<div class="card-webinar row">
-							<div class="col-2 text-center">
+							<div class="col-12 col-lg-2 text-lg-center">
 								<img class="webinar-thumbnail" src="<?php echo get_template_directory_uri(); ?>/src/images/boccowebinar-post.svg" alt="bocco webinar event image thumbnail">
 							</div>
-							<div class="col-10">
+							<div class="col-12 col-lg-10">
 								<h3><?php the_title(); ?></h3>
 								<hr>
 								<div class="card-webinar-details row">
-									<div class="col-4">
+									<div class="col-12 col-lg-4">
 										<p class="card-webinar-details--item">
 											<span><?php esc_html_e( 'Datum:', 'bocco-group' ); ?></span><br>
 											<?php the_field( 'date' ); ?>
@@ -67,7 +67,7 @@
 										endif;
 										?>
 									</div>
-									<div class="col-8 card-webinar-details--description">
+									<div class="col-12 col-lg-8 card-webinar-details--description">
 										<div class="card-webinar-details--item mb-2">
 											<span><?php esc_html_e( 'Beschreibung:', 'bocco-group' ); ?></span><br>
 											<?php the_content(); ?>

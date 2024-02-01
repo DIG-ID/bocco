@@ -15,7 +15,7 @@
 	</div>
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-lg-6">
+			<div class="col-12 col-lg-6">
 				<h1><?php the_field( 'hero_title' ); ?></h1>
 				<h2><?php the_field( 'hero_subtitle' ); ?></h2>
 				<p><?php the_field( 'hero_description' ); ?></p>
@@ -36,7 +36,7 @@
 				endif;
 				?>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-12 col-lg-6">
 				<div class="section-webinar-hero__image">
 					<?php
 					$hero_img    = get_field( 'hero_image' );

@@ -14,7 +14,7 @@
     color: #FFF
     font-family: $roboto
     font-size: 75px
-    margin-bottom: 48px
+    margin-bottom: 42px
     font-style: normal
     font-weight: 400
     line-height: normal
@@ -23,7 +23,7 @@
   h2
     color: #FFF
     font-family: $roboto
-    font-size: 42px
+    font-size: 38px
     margin-bottom: 74px
     font-style: normal
     font-weight: 400
@@ -82,6 +82,9 @@
     &--sm
       position: relative
       display: none
+      max-width: 100%
+      object-fit: cover
+      height: auto
       z-index: 2
     &--xl
       position: relative
@@ -89,3 +92,32 @@
       object-fit: cover
       height: auto
       z-index: 2
+
+@media (max-width: 1024px)
+  .section-webinar-hero
+    padding-top: 32px
+    padding-bottom: 64px
+    max-height: initial
+    .webinar-logo
+      margin-bottom: 60px
+      img
+        max-width: 227px
+    h1
+      font-size: 32px
+      margin-bottom: 38px
+    h2
+      font-size: 22px
+      margin-bottom: 16px
+    p
+      font-size: 16px
+      margin-bottom: 24px
+    &__button
+      display: none
+      visibility: invisible
+    &__image
+      &--bg
+        display: none
+      &--sm
+        display: block
+      &--xl
+        display: none
