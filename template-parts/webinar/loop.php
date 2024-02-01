@@ -28,7 +28,7 @@
 			'post_type'   => 'webinar',
 			'post_status' => 'publish',
 			'orderby'     => 'date',
-			'order'       => 'DESC',
+			'order'       => 'ASC',
 		);
 
 		$webinar_query = new WP_Query( $webinar_args );
