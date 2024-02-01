@@ -1,6 +1,7 @@
 .section-webinar-hero
   min-height: 100svh
-  max-height: 100svh
+  padding-top: 32px
+  padding-bottom: 64px
   overflow: hidden
   background-color: $background-dark
   display: flex
@@ -18,8 +19,6 @@
     font-style: normal
     font-weight: 400
     line-height: normal
-    z-index: 2
-    position: relative
   h2
     color: #FFF
     font-family: $roboto
@@ -28,8 +27,6 @@
     font-style: normal
     font-weight: 400
     line-height: normal
-    z-index: 2
-    position: relative
   p
     color: #FFF
     font-family: $roboto
@@ -39,8 +36,6 @@
     line-height: normal
     max-width: 430px
     margin-bottom: 70px
-    z-index: 2
-    position: relative
   &__button
     font-family: $roboto
     font-weight: bold
@@ -58,8 +53,6 @@
     transition: all .3s ease-in-out
     text-decoration: none
     cursor: pointer
-    z-index: 2
-    position: relative
     display: inline-flex
     justify-content: space-between
     align-items: center
@@ -70,34 +63,22 @@
     svg
       margin-left: 20px
   &__image
-    &--bg
-      position: absolute
-      z-index: 1
-      top: 0
-      right: 0
-      width: 100%
-      height: 100%
-      display: flex
-      justify-content: flex-end
     &--sm
-      position: relative
       display: none
       max-width: 100%
       object-fit: cover
       height: auto
-      z-index: 2
     &--xl
-      position: relative
       max-width: 100%
       object-fit: cover
       height: auto
-      z-index: 2
 
 @media (max-width: 1024px)
   .section-webinar-hero
     padding-top: 32px
     padding-bottom: 64px
     max-height: initial
+    background: $background-dark !important
     .webinar-logo
       margin-bottom: 60px
       img

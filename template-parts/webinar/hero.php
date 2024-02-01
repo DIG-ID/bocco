@@ -1,11 +1,4 @@
-<section class="section-webinar-hero">
-	<div class="section-webinar-hero__image--bg">
-		<svg xml:space="preserve" width="963" height="1075" viewBox="0 0 963 1075" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M225.973 851.123C-243.139 431.703 103.991 103.324 490.569 90.6938C1291.15 72.1699 1208.5 522.568 1067.1 750.083C943.093 923.57 601.262 1186.66 225.973 851.123Z" fill="#4DEBB3"/>
-			<path d="M457.343 744.337C-11.769 324.917 335.362 -3.46238 721.939 -16.0923C1522.52 -34.6163 1439.87 415.782 1298.47 643.297C1174.46 816.784 832.632 1079.87 457.343 744.337Z" fill="#080F26"/>
-			<path d="M710.191 -137.671C328.401 -137.671 81.8694 160.568 81.8694 469.23C96.528 1113.81 759.497 1197.99 966.716 1149.09C1173.94 1100.18 1054.67 875.702 886.76 571.048C718.853 266.395 1091.98 -137.671 710.191 -137.671Z" fill="#0040E5"/>
-		</svg>
-	</div>
+<section class="section-webinar-hero" style="background: url( <?php echo get_template_directory_uri(); ?>/src/images/boccowebinar-hero-bg-2.svg ); background-position: center center; background-size: cover; background-repeat: no-repeat;">
 	<div class="container">
 		<div class="row">
 			<div class="col webinar-logo">
