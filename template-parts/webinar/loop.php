@@ -110,7 +110,7 @@
 		?>
 		
 		<div class="row">
-			<div class="col-10">
+			<div class="col-10 pt-5">
 				<h2><?php esc_html_e( 'Vergangene Events', 'bocco-group' ); ?></h2>
 			</div>
 		</div>
