@@ -27,6 +27,7 @@
 		$webinar_args = array(
 			'post_type'   => 'webinar',
 			'post_status' => 'publish',
+			'posts_per_page' => -1,
 			'orderby'     => 'date',
 			'order'       => 'ASC',
 			'meta_query'     => array(
@@ -118,6 +119,7 @@
 		$webinar_args = array(
 			'post_type'   => 'webinar',
 			'post_status' => 'publish',
+			'posts_per_page' => -1,
 			'orderby'     => 'date',
 			'order'       => 'ASC',
 			'meta_query'     => array(
